@@ -1,7 +1,7 @@
 ﻿# Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Евгений Гузеев](https://up.htmlacademy.ru/adaptive/18/user/427803).
-* Наставник: `Влад Кривокора`.
+* Наставник: [Влад Кривокора].
 
 ---
 
