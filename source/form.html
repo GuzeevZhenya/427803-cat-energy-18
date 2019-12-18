@@ -2,123 +2,117 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 </head>
 
 <body>
-    <header class="page-header">
-        <div class="wrapper">
-            <a class="page-header__logo logo">
-                <img src="" alt="Логотип «Кэт энерджи»">
-            </a>
-            <nav class="main-nav">
-                <ul class="main-nav__list site-list">
-                    <li class="site-list__item">
-                        <a href="#">Главная</a>
-                    </li>
-                    <li class="site-list__item site-list__item--active">
-                        <a href="#">Каталог продукции</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="#">Подбор программы</a>
-                    </li>
-                </ul>
-            </nav>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo logo">
+        <img src="" alt="Логотип «Кэт энерджи»">
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#">Главная</a>
+          </li>
+          <li class="site-list__item ">
+            <a href="#">Каталог продукции</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <div class="page-main__wrapper">
+      <h1 class="page-main__title">Подбор программы</h1>
+      <p class="page-main__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form action="page-main__form form">
+        <div class="form-wrapper">
+          <div class="cat-info">
+            <label for="cat__name">Имя*</label><input class="cat-info__input" id="cat__name" type="text" required
+              placeholder="Барсик">
+            <label for="cat__weight">Вес (Кг):*</label><input class="cat-info__input" id="cat__weight" type="text"
+              required placeholder="7">
+            <label for="cat__age">Возраст (Лет)*</label><input class="cat-info__input" id="cat__age" type="text"
+              placeholder="7">
+          </div>
+          <div class="form-radio">
+            <input type="radio" name="selection" id="slim" value="Похудение" checked><label for="slim">Похудение</label>
+            <input type="radio" name="selection" id="pro" value="Набор массы"><label for="pro">Набор
+              массы</label>
+            <input type="radio" name="selection" id="nothing" value="Не знаю(нужен совет)"><label for="nothing">Не
+              знаю(нужен
+              совет)</label>
+          </div>
         </div>
-    </header>
-    <main class="page-main">
-        <div class="wrapper">
-            <h1 class="page-main__title">Подбор программы</h1>
-            <p class="page-main__text"></p>
-            <form action="page-main__form form">
-                <section class="form-wrapper">
-                    <div class="cat-info">
-                        <label for="cat__name">Имя*</label><input class="cat-info__input" id="cat__name" type="text"
-                            required placeholder="Барсик">
-                        <label for="cat__weight">Вес (Кг):*</label><input class="cat-info__input" id="cat__weight"
-                            type="text" required placeholder="7">
-                        <label for="cat__age">Возраст (Лет)*</label><input class="cat-info__input" id="cat__age"
-                            type="text" placeholder="7">
-                    </div>
-                    <div class="form-radio">
-                        <input type="radio" name="selection" id="slim" value="Похудение" checked><label
-                            for="slim">Похудение</label>
-                        <input type="radio" name="selection" id="pro" value="Набор массы"><label for="pro">Набор
-                            массы</label>
-                        <input type="radio" name="selection" id="nothing" value="Не знаю(нужен совет)"><label
-                            for="nothing">Не знаю(нужен
-                            совет)</label>
-                    </div>
-                </section>
 
-        </div>
-        <section class="form-contacts form">
-            <div class="wrapper">
-                <h2 class="form__title title-border">Контактные данные (владельца кота)</h2>
-                <label for="">E-mail*</label><input type="text" required placeholder="kuklachev@gmail.com">
-                <label for="">Телефон*</label><input type="text" required placeholder="8 (960) 900-60-90">
-            </div>
-        </section>
-        <section class="form-comments">
-            <div class="wrapper">
-                <h2 class="form__title title-border">Комментарий</h2>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота">
+    </div>
+    <div class="form-contacts form">
+      <div class="form-contacts__wrapper">
+        <h2 class="form__title title-border">Контактные данные (владельца кота)</h2>
+        <label for="">E-mail*</label><input type="text" required placeholder="kuklachev@gmail.com">
+        <label for="">Телефон*</label><input type="text" required placeholder="8 (960) 900-60-90">
+      </div>
+    </div>
+    <div class="form-comments">
+      <div class="form-comments__wrapper">
+        <h2 class="form__title title-border">Комментарий</h2>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота">
                 </textarea>
-            </div>
-        </section>
-        <section class="additional-info">
-            <div class="wrapper">
-                <h2 class="form__title title-border">Дополнительно</h2>
-                <input type="checkbox" checked><label for="">Сахарозаменитель</label>
-                <input type="checkbox"><label for="">Питьевая вода</label>
-                <input type="checkbox"><label for="">молоко</label>
-                <input type="checkbox"><label for="">Витамины</label>
-                <button class="form__button button" type="submit">Отправить заявку</button>
-                <small class="form__required">* — Обязательные поля</small>
-            </div>
-        </section>
-        </form>
-    </main>
-    <footer class="page-footer">
-        <section class="map">
-            <img src="https://via.placeholder.com/150x150" alt="Местоположение магазина">
-            <div class="map__info map__info--white">
-                <h3 class="map__title">Приглашаем к сотрудничеству дилеров!</h3>
-                <p class="map__text">ул. Большая Конюшенная, д. 19/8
-                    Санкт-Петербург
-                </p>
-            </div>
-        </section>
-        <div class="wrapper">
-            <div class="page-footer__wrapper">
-                <div class="page-footer__logo logo">
-                    <img src="https://via.placeholder.com/150x150" alt="Логотип">
-                </div>
-                <div class="page-footer__social social">
-                    <ul social__list>
-                        <li class="social__item">
-                            <a class="social__link social__link--vkontakte" href=""></a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__link social__link--instagram" href=""></a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__link social__link--facebook" href=""></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="page-footer__copyright copyright">
-                    <a class="copyright__link" href="">HTML Academy</a>
-                    <a href="https://htmlacademy.ru/intensive/adaptive">
-                        <img class="copyright__image" src="https://via.placeholder.com/150x150" alt="Копирайтинг">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
+      </div>
+    </div>
+    <div class="additional-info">
+      <div class="additional-info__wrapper">
+        <h2 class="form__title title-border">Дополнительно</h2>
+        <input type="checkbox" checked><label for="">Сахарозаменитель</label>
+        <input type="checkbox"><label for="">Питьевая вода</label>
+        <input type="checkbox"><label for="">молоко</label>
+        <input type="checkbox"><label for="">Витамины</label>
+        <button class="form__button button" type="submit">Отправить заявку</button>
+        <small class="form__required">* — Обязательные поля</small>
+      </div>
+    </div>
+    </form>
+  </main>
+  <section class="map">
+    <img src="https://via.placeholder.com/150x150" alt="Местоположение магазина">
+    <div class="map__info map__info--white">
+      <h3 class="map__title">Приглашаем к сотрудничеству дилеров!</h3>
+      <p class="map__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+      </p>
+    </div>
+  </section>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo logo">
+        <img src="https://via.placeholder.com/150x150" alt="Логотип">
+      </div>
+      <ul class="social__list social">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href=""></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href=""></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href=""></a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__image" src="https://via.placeholder.com/150x150" alt="Копирайтинг">
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
