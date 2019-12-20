@@ -1,7 +1,6 @@
 @import 'content.scss';
+@import 'blocks/page-header.scss';
 
 body {
-  background-color: tomato;
-  font-family: sans-serif;
-  color: white;
+  max-width: 1440px;
 }
