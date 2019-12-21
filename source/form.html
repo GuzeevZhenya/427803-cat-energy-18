@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
 
@@ -12,9 +13,12 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo logo">
-        <img src="" alt="Логотип «Кэт энерджи»">
+        <img src="img/logo-mobile.svg" alt="Логотип «Кэт энерджи»" width="208px" height="59px">
       </a>
       <nav class="main-nav">
+        <button class="main-nav__toggle toggle" type="button">
+          <span class="">Показать/Скрыть Меню</span>
+        </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="#">Главная</a>
@@ -29,6 +33,7 @@
       </nav>
     </div>
   </header>
+
   <main class="page-main">
     <div class="page-main__wrapper">
       <h1 class="page-main__title">Подбор программы</h1>
@@ -52,8 +57,8 @@
               совет)</label>
           </div>
         </div>
-
     </div>
+    
     <div class="form-contacts form">
       <div class="form-contacts__wrapper">
         <h2 class="form__title title-border">Контактные данные (владельца кота)</h2>
@@ -81,18 +86,21 @@
     </div>
     </form>
   </main>
+
   <section class="map">
-    <img src="https://via.placeholder.com/150x150" alt="Местоположение магазина">
+    <img src="img/map-pin.png" alt="Местоположение магазина" />
     <div class="map__info map__info--white">
       <h3 class="map__title">Приглашаем к сотрудничеству дилеров!</h3>
-      <p class="map__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+      <p class="map__text">
+        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
       </p>
     </div>
   </section>
+
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__logo logo">
-        <img src="https://via.placeholder.com/150x150" alt="Логотип">
+        <img src="img/logo-footer.svg" width="128px" height="25px" alt="Логотип" />
       </div>
       <ul class="social__list social">
         <li class="social__item">
@@ -108,7 +116,7 @@
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="">HTML Academy</a>
         <a href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__image" src="https://via.placeholder.com/150x150" alt="Копирайтинг">
+          <img class="copyright__image" src="img/htmlacademy.svg" width="27px" height="34px" alt="Копирайтинг" />
         </a>
       </div>
     </div>
