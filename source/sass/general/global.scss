@@ -11,14 +11,15 @@ body {
   margin: 0;
   padding: 0;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6{
-  margin: 0px;
-  padding: 0px;
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
 *,
@@ -37,24 +38,26 @@ a {
   text-decoration: none;
   text-transform: uppercase;
 }
-li{
+
+li {
   list-style: none;
 }
 
-ul{
-  margin:0px;
-  padding:0px;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-p{
-  margin: 0px;
-  padding: 0px;
+p {
+  margin: 0;
+  padding: 0;
 }
 
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -66,18 +69,18 @@ table {
   clip: rect(0 0 0 0);
 }
 
-.button{
+.button {
   font-size: 14px;
   line-height: 18px;
   max-width: 280px;
   min-height: 40px;
   padding: 13px 108px 13px 111px;
   background-color: $green;
-  color: #fff;
+  color: #ffffff;
 }
 
-.page-main__title{
+.page-main__title {
   font-size: 36px;
   line-height: 60px;
-  color: #fff;
+  color: #ffffff;
 }

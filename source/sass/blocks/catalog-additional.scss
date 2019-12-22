@@ -1,44 +1,42 @@
-.additional__title{
-    padding-bottom:31px;
+.additional__title {
+  padding-bottom: 31px;
 }
 
-
-.additional__list tr{
-    border-top: 1px solid $border;
-    border-bottom: 1px solid $border;
-
+.additional__list tr {
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
 }
 
-.catalog-additional{
-    padding:25px 0 35px;
+.catalog-additional {
+  padding: 25px 0 35px;
 }
 
-.additional__text{
-    font-size: 16px;
-    line-height: 16px;
+.additional__text {
+  font-size: 16px;
+  line-height: 16px;
 }
 
-.additional__value{
-    font-size: 14px;
-    line-height: 14px;
-    color: $text;
+.additional__value {
+  font-size: 14px;
+  line-height: 14px;
+  color: $text;
 }
 
-.additional__price{
-    font-size: 14px;
-    line-height: 14px;
-    color: $text;
+.additional__price {
+  font-size: 14px;
+  line-height: 14px;
+  color: $text;
 }
 
-.aditional__gift{
-    background-image: url(../../img/gift-photo-mobile@2x.jpg);
-    background-repeat: no-repeat;
-    height: 280px;
-    width: 290px;
+.aditional__gift {
+  background-image: url("../../img/gift-photo-mobile@2x.jpg");
+  background-repeat: no-repeat;
+  height: 280px;
+  width: 290px;
 }
 
-.additional__gift-text{
-    font-size: 16px;
-    line-height: 20px;
-    color: #ffffff;
+.additional__gift-text {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
 }
