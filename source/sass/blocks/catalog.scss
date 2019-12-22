@@ -1,50 +1,47 @@
-.catalog-main__title{
+.catalog-main__title {
   padding-top: 32px;
   padding-bottom: 46px;
   color: #111111;
 }
-.more-info__link{
+.more-info__link {
   background-color: $bgc;
 }
 
-.catalog__list{
+.catalog__list {
   padding: 24px 0;
   border-top: 1px solid $border;
   border-bottom: 1px solid $border;
 }
 
-.catalog__list img{
- margin: 10px 38px 31px 36px;
+.catalog__list img {
+  margin: 10px 38px 31px 36px;
 }
 
-.catalog__title{
+.catalog__title {
   font-size: 16px;
   line-height: 20px;
   padding-bottom: 19px;
 }
 
-.catalog__list table{
+.catalog__list table {
   margin-bottom: 26px;
 }
 
-.catalog__criteria,.catalog__value{
+.catalog__criteria,
+.catalog__value {
   font-size: 12px;
   line-height: 16px;
 }
 
-.more-info__title{
+.more-info__title {
   font-size: 16px;
   line-height: 20px;
   margin-top: 26px;
   margin-bottom: 16px;
 }
 
-.more-info__text{
+.more-info__text {
   font-size: 12px;
   line-height: 16px;
   margin-bottom: 25px;
 }
-
-
-
-
