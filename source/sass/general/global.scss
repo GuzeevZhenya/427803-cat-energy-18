@@ -12,16 +12,6 @@ body {
   padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
-}
-
 *,
 *::before,
 *::after {
@@ -31,26 +21,6 @@ h6 {
 img {
   max-width: 100%;
   height: auto;
-}
-
-a {
-  color: $black;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-li {
-  list-style: none;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  margin: 0;
-  padding: 0;
 }
 
 table {
@@ -67,20 +37,4 @@ table {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
-}
-
-.button {
-  font-size: 14px;
-  line-height: 18px;
-  max-width: 280px;
-  min-height: 40px;
-  padding: 13px 108px 13px 111px;
-  background-color: $green;
-  color: #ffffff;
-}
-
-.page-main__title {
-  font-size: 36px;
-  line-height: 60px;
-  color: #ffffff;
 }

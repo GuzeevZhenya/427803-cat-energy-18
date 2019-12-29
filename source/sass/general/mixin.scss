@@ -10,22 +10,20 @@
   transform: translate(-50%, -50%);
 }
 
-@mixin font-text($width: 12px, $line-height: 16px) {
-  font-family: "Arial", "Verdana", sans-serif;
+@mixin font-text(
+  $font-family: $oswald,
+  $width: 12px,
+  $line-height: 16px,
+  $font-weight: 400
+) {
+  font-family: $font-family;
   font-size: $width;
   line-height: $line-height;
+  font-weight: $font-weight;
 }
 
-@mixin font-description($width: 16px, $line-height: 20px) {
-  font-family: "Oswald", "Impact", sans-serif;
-  font-size: $width;
-  line-height: $line-height;
-  font-weight: 500;
-}
-
-@mixin font-title($width: 16px, $line-height: 20px) {
-  font-family: "Oswald", "Impact", sans-serif;
-  font-size: $width;
-  line-height: $line-height;
-  font-weight: 400;
+@mixin tablets {
+  @media (min-width: 768px) {
+    @content;
+  }
 }
