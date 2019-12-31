@@ -4,11 +4,9 @@
 }
 
 .map__title {
-  font-size: 16px;
-  line-height: 20px;
+  @include font-text($oswald, 16px, 20px, 500);
 }
 
 .map__text {
-  font-size: 14px;
-  line-height: 20px;
+  @include font-text($arial, 14px, 20px, 400);
 }

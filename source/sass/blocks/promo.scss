@@ -4,16 +4,15 @@
 }
 
 .promo__title {
-  font-size: 36px;
-  line-height: 36px;
+  @include font-text($oswald, 36px, 36px, 400);
   color: #ffffff;
   padding-bottom: 20px;
+
 }
 
 .promo__text {
+  @include font-text($oswald, 14px, 14px, 400);
   margin: 0;
-  font-size: 14px;
-  line-height: 14px;
   color: #ffffff;
   padding-bottom: 30px;
 }

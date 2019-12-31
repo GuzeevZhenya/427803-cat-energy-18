@@ -1,17 +1,17 @@
 .product-groups__item {
   background-color: $bgc;
   padding: 22px 36px 23px 20px;
+  list-style: none;
+  margin-top: 20px;
 }
 
-.product-group__title {
-  font-size: 24px;
-  line-height: 37px;
+.product-groups__title {
+  @include font-text($oswald, 24px, 37px, 500);
   text-transform: uppercase;
 }
 
-.product-group__text {
-  font-size: 14px;
-  line-height: 18px;
+.product-groups__text {
+  @include font-text($arial, 14px, 18px, 400);
   margin-top: 25px;
   margin-bottom: 20px;
   padding-bottom: 23px;
@@ -19,8 +19,9 @@
   color: $text;
 }
 
-.product-group__link {
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 500;
+.product-groups__link {
+  @include font-text($oswald, 16px, 16px, 500);
+  color: $black;
+  text-decoration: none;
+  text-transform: uppercase;
 }

@@ -1,0 +1,8 @@
+.copyright{
+
+}
+.copyright__link{
+  @include font-text($arial, 16px, 16px, 400);
+  text-decoration: none;
+  color: $text;
+}
