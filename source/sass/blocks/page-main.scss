@@ -1,0 +1,4 @@
+.page-main__title {
+  @include font-text($oswald, 60px, 60px, 400);
+  color: $black;
+}

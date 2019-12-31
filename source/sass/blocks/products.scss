@@ -1,0 +1,17 @@
+.product__list{
+
+}
+
+.product__title{
+  @include font-text($oswald, 20px, 20px, 400);
+}
+
+.product__criteria{
+  @include font-text($arial, 16px, 16px, 400);
+  color: $text;
+}
+
+.product__value{
+  @include font-text($arial, 16px, 16px, 400);
+  color: $text;
+}
