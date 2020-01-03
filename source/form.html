@@ -64,8 +64,8 @@
             <h2 class="cat-contacts__title">
               Контактные данные (владельца кота)
             </h2>
-            <label for="">E-mail*</label><input type="text" required placeholder="kuklachev@gmail.com" />
-            <label for="">Телефон*</label><input type="text" required placeholder="8 (960) 900-60-90" />
+            <label for="">E-mail*</label><input class="cat-contacts__input" id="cat__email" type="text" required placeholder="kuklachev@gmail.com" />
+            <label for="">Телефон*</label><input class="cat-contacts__input" type="text" id="cat__telephon" required placeholder="8 (960) 900-60-90" />
           </div>
         </div>
         <div class="cat-comments">
@@ -78,10 +78,10 @@
         <div class="cat-additional">
           <div class="cat-additional__wrapper">
             <h2 class="cat-additional__title">Дополнительно</h2>
-            <input type="checkbox" checked /><label for="">Сахарозаменитель</label>
-            <input type="checkbox" /><label for="">Питьевая вода</label>
-            <input type="checkbox" /><label for="">молоко</label>
-            <input type="checkbox" /><label for="">Витамины</label>
+            <input class="cat-additional__input" id="cat__sweetener" type="checkbox" checked /><label for="">Сахарозаменитель</label>
+            <input class="cat-additional__input" id="cat__water" type="checkbox" /><label for="">Питьевая вода</label>
+            <input class="cat-additional__input" id="cat__milk" type="checkbox" /><label for="">Молоко</label>
+            <input class="cat-additional__input" id="cat__vitamins" type="checkbox" /><label for="">Витамины</label>
           </div>
         </div>
         <button class="form__button button" type="submit">

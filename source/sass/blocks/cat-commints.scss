@@ -1,0 +1,6 @@
+.cat-comments {}
+
+.cat-comments__title {
+  @include font-text($oswald, 24px, 24px, 400);
+
+}

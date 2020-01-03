@@ -1,17 +1,42 @@
-.product__list{
-
+.product__list {
+  padding: 24px 0;
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+  list-style: none;
 }
 
-.product__title{
+.product__list img {
+  margin: 10px 38px 31px 36px;
+}
+
+
+.product__list table {
+  margin-bottom: 26px;
+}
+
+.product__title {
   @include font-text($oswald, 20px, 20px, 400);
+  padding-bottom: 19px;
 }
 
-.product__criteria{
+.product__criteria {
   @include font-text($arial, 16px, 16px, 400);
   color: $text;
 }
 
-.product__value{
+.product__value {
   @include font-text($arial, 16px, 16px, 400);
   color: $text;
+}
+
+.more-info__title {
+  @include font-text($oswald, 16px, 20px, 400);
+  margin-top: 26px;
+  margin-bottom: 16px;
+}
+
+.more-info__text {
+  @include font-text($arial, 12px, 16px, 400);
+  color: $text;
+  margin-bottom: 25px;
 }
