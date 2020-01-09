@@ -2,7 +2,6 @@
   background-color: $bgc;
 }
 
-.social__list {
-  border-top: 1px solid $border;
-  border-bottom: 1px solid $border;
+.page-footer__wrapper {
+  @include wrapper;
 }

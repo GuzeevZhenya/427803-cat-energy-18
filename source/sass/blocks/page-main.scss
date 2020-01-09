@@ -1,4 +1,20 @@
 .page-main__title {
-  @include font-text($oswald, 60px, 60px, 400);
+  @include font-text($oswald, 36px, 60px, 400);
+  @include wrapper;
+  margin: 0;
   color: $black;
+}
+
+.promo__title--white {
+  @include font-text($oswald, 36px, 36px, 400);
+}
+
+.page-main__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.page-main__text {
+  @include wrapper;
 }
