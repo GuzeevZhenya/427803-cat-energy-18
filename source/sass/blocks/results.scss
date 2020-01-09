@@ -1,0 +1,44 @@
+.results {
+  margin-bottom: 25px;
+}
+
+.results__amount {
+  @include font-text($oswald, 24px, 24px, 400);
+}
+
+.results__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.results__item {
+  margin: 0;
+  border: 1px solid $price;
+  position: relative;
+  width: 123px;
+  text-align: center;
+  padding: 16px 0;
+}
+
+.results__action {
+  @include font-text($arial, 12px, 12px, 400);
+  color: $text;
+  position: absolute;
+  left: 35px;
+  top: 53px;
+  background-color: $bgc;
+  max-width: 55px;
+}
+
+
+.results__cost {
+  @include font-text($oswald, 14px, 20px, 400);
+  padding: 0 46px;
+  margin: 0;
+  margin-top: 38px;
+  margin-bottom: 46px;
+}
+
+.results-block__photo label {
+  @include font-text($oswald, 16px, 20px, 400);
+}

@@ -1,0 +1,13 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 31px;
+  padding-bottom: 34px;
+  border-top: 1px solid $border;
+}
+
+.copyright__link {
+  @include font-text($arial, 16px, 16px, 400);
+  text-decoration: none;
+  color: $text;
+}

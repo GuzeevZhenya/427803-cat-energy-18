@@ -1,0 +1,7 @@
+.page-footer {
+  background-color: $bgc;
+}
+
+.page-footer__wrapper {
+  @include wrapper;
+}
