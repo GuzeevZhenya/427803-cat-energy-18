@@ -1,13 +1,4 @@
-.page-main {
-  border-top: 1px solid $border;
-}
-
-.page-main__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.products__list {
+.products {
   @include list-reset;
   display: flex;
   flex-direction: column;
@@ -26,7 +17,7 @@
   max-width: 140px;
 }
 
-.products__list table {
+.products table {
   width: 140px;
   margin: 0;
   margin-bottom: 23px;

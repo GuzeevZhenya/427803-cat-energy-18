@@ -32,11 +32,13 @@
 
 .advantages__item--natural::before {
   position: absolute;
+  display: block;
+  z-index: 1;
   content: "";
-  background-image: url("../../img/after-mobile@1x.png");
+  background-image: url("../img/advantage-leaf@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
   width: 26px;
   height: 29px;
-  color: red;
-  background-color: red;
-  left: -10px;
+  left: 10px;
 }

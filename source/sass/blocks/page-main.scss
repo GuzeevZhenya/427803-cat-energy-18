@@ -5,10 +5,6 @@
   color: $black;
 }
 
-.promo__title--white {
-  @include font-text($oswald, 36px, 36px, 400);
-}
-
 .page-main__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -17,4 +13,8 @@
 
 .page-main__text {
   @include wrapper;
+}
+
+.page-main {
+  border-top: 1px solid $border;
 }
