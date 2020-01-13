@@ -1,0 +1,52 @@
+.products-additional__wrapper {
+  @include wrapper;
+  display: flex;
+  flex-direction: column;
+}
+
+.products-additional__title {
+  @include font-text($oswald, 24px, 24px, 400);
+  margin: 0;
+}
+
+.products-additional__text {
+  @include font-text($oswald, 16px, 16px, 400);
+  margin: 0;
+  text-transform: uppercase;
+  margin-top: 14px;
+  margin-bottom: 16px;
+}
+
+.products-additional__value {
+  @include font-text($arial, 14px, 14px, 400);
+}
+
+.products-additional__price {
+  @include font-text($arial, 14px, 14px, 400);
+  margin-bottom: 17px;
+}
+
+.products-additional__gift {
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 190px 58px 37px;
+  margin-top: 39px;
+}
+
+.products-additional__gift-text {
+  @include font-text($arial, 16px, 20px, 400);
+  margin: 0;
+  max-width: 166px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.products-additional__list tr {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,20 +1,20 @@
 .map {
+
   padding-top: 31px;
   padding-bottom: 26px;
 }
 
 .map__title {
   @include font-text($oswald, 16px, 20px, 500);
-  max-width: 140px;
 }
 
 .map__text {
   @include font-text($arial, 14px, 20px, 400);
   color: $text;
-  max-width: 140px;
 }
 
 .map__info {
   @include wrapper;
   display: flex;
+  justify-content: space-between;
 }

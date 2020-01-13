@@ -2,4 +2,6 @@
   @include font-text($oswald, 16px, 20px, 400);
   background-color: $bgc;
   color: #000000;
+  width: 100%;
+  text-align: center;
 }
