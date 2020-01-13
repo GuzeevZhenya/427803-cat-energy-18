@@ -5,3 +5,10 @@
 .page-footer__wrapper {
   @include wrapper;
 }
+
+.page-footer__logo{
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 31px;
+  border-bottom: 1px solid $border;
+}

@@ -1,0 +1,72 @@
+.banner-present {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  @include container-mobile;
+  padding: 65px 60px 26px 60px;
+  background-color: $image-bg-color;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+
+  @include font-content(16px, 20px);
+  color: $txt-contr-color;
+}
+
+.banner-present__image {
+  width: 56px;
+  height: 61px;
+  margin-bottom: 45px;
+  fill: currentColor;
+}
+
+.banner-present__appeal {
+  width: 100%;
+  text-align: center;
+  color: $txt-contr-color;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+  .banner-present {
+    flex-flow: row;
+
+    @include container-tablet;
+    padding: 48px 125px 53px 91px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
+  }
+
+  .banner-present__image {
+    margin-bottom: 0;
+    margin-right: auto;
+  }
+
+  .banner-present__appeal {
+    width: 160px;
+    text-align: left;
+    padding-top: 7px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .banner-present {
+    width: 245px;
+    padding: 65px 43px 20px;
+    margin: 0;
+    margin-right: $desktop-padding;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
+  }
+}

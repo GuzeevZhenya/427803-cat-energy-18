@@ -1,0 +1,82 @@
+.more-card {
+  position: relative;
+  width: 100%;
+  padding: 0 $mobile-padding;
+  padding-bottom: 22px;
+
+  @include font-content(12px, 16px);
+  color: $txt-main-color;
+  background-color: inherit;
+}
+
+.more-card__plus {
+  position: absolute;
+  top: 27px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 31px;
+  height: 31px;
+  fill: currentColor;
+}
+
+.more-card__header {
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 80px 20px 0 20px;
+
+  @include font-header(16px, 20px);
+  text-transform: uppercase;
+  text-align: center;
+  background-color: inherit;
+}
+
+.more-card__intrigue {
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .more-card {
+    padding: 0 38px 40px 38px;
+    border: 1px solid $border-input-color;
+
+    @include set-font-size(16px, 16px);
+  }
+
+  .more-card__plus {
+    top: 55px;
+    width: 61px;
+    height: 61px;
+  }
+
+  .more-card__header {
+    padding: 165px 45px 0;
+    margin-bottom: 29px;
+
+    @include set-font-size(20px, 20px);
+    color: $txt-header-color;
+  }
+
+  .more-card__intrigue {
+    margin: 0;
+    padding: 0 35px;
+    margin-bottom: 85px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .more-card {
+    padding: 0 34px 40px;
+    border: 1px solid $border-input-color;
+  }
+
+  .more-card__header {
+    padding: 165px 0 0;
+  }
+
+  .more-card__intrigue {
+    padding: 0;
+  }
+}

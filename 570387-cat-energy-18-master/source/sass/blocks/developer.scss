@@ -1,0 +1,42 @@
+.developer {
+  padding: 17px 0;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  @include font-content(16px, 16px);
+  color: $icon-color;
+
+  &:hover .developer__logo,
+  &:focus .developer__logo,
+  &:active .developer__logo {
+    fill: $icon-active-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.developer__logo {
+  width: 37px;
+  height: 44px;
+  margin-left: 18px;
+  margin-right: -5px;
+  fill: currentColor;
+}
+
+@media (min-width: $tablet-width) {
+  .developer {
+    padding: 0;
+    border: none;
+    justify-content: flex-end;
+  }
+
+  .developer__logo {
+    margin-left: 15px;
+    margin-right: -5px;
+  }
+}

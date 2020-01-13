@@ -1,0 +1,150 @@
+.banner-promotion {
+  position: relative;
+  padding: 27px $mobile-padding 0;
+  color: $txt-contr-color;
+  background-color: $main-bg-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 63.5%;
+    z-index: 0;
+    background-color: $image-bg-color;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+    }
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-promotion__header {
+  width: 100%;
+  margin: 0 auto 27px;
+  z-index: 1;
+
+  @include font-header(36px, 36px);
+  text-align: center;
+}
+
+.banner-promotion__appeal {
+  margin: 0 auto 27px;
+  z-index: 1;
+
+  @include font-header(14px, 14px);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.banner-promotion__image {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  margin: 0 auto -7px;
+  z-index: 1;
+}
+
+.banner-promotion__show-programs {
+  z-index: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .banner-promotion {
+    position: relative;
+    align-items: flex-start;
+    padding: 35px 100px 530px 115px;
+    color: $txt-header-color;
+    background-color: transparent;
+    background-image: none;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  .banner-promotion__header {
+    padding: 0;
+    margin: 0 0 40px;
+
+    @include set-font-size(60px, 60px);
+    text-align: left;
+  }
+
+  .banner-promotion__appeal {
+    padding: 0;
+    margin: 0 0 48px;
+
+    @include set-font-size(20px, 20px);
+    text-align: left;
+  }
+
+  .banner-promotion__image {
+    position: absolute;
+    z-index: 0;
+    top: 235px;
+    left: 25px;
+    width: 709px;
+    height: 609px;
+  }
+
+  .banner-promotion__show-programs {
+    display: inline-block;
+    width: auto;
+    padding: 15px 26px;
+
+    @include font-header(20px, 20px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .banner-promotion {
+    padding: 225px 55% 191px 120px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background-color: $image-bg-color;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: auto;
+    }
+  }
+
+  @media (min-resolution: $retina-dppx) {
+    .banner-promotion::after {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
+  }
+
+  .banner-promotion__header {
+    padding: 0;
+    margin: 0 0 42px;
+  }
+
+  .banner-promotion__appeal {
+    margin-bottom: 53px;
+  }
+
+  .banner-promotion__image {
+    z-index: 1;
+    top: 145px;
+    right: -210px;
+    width: 552px;
+    height: 499px;
+  }
+}

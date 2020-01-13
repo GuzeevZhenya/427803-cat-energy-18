@@ -1,0 +1,39 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*сокрытие элементов которые должны быть видны для роботов и читалок*/
+.visually-hidden:not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  min-width: 320px;
+  font-family: "Arial", "Verdana", sans-serif;//Так сделано специально, мало ли где ошибка, чтобы шрифт более менее смотрелся
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 15px;
+  color: black;
+  background-color: $main-bg-color;
+}
