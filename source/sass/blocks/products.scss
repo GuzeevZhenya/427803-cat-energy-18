@@ -2,7 +2,6 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
-  padding: 24px 0;
   border-top: 1px solid $border;
 }
 
@@ -12,7 +11,6 @@
   flex-wrap: wrap;
   padding: 0 20px 22px;
   border-bottom: 1px solid $border;
-  float: 1;
 }
 
 .products__item-wrapper {
@@ -54,14 +52,27 @@
   color: $text;
 }
 
+
+.more-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 26px;
+}
+
+
 .more-info__title {
   @include font-text($oswald, 16px, 20px, 400);
+  display: block;
+  margin: 0;
   margin-top: 26px;
-  margin-bottom: 16px;
+  margin-bottom: 13px;
 }
 
 .more-info__text {
   @include font-text($arial, 12px, 16px, 400);
   color: $text;
+  margin: 0;
   margin-bottom: 25px;
 }

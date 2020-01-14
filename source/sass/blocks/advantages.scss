@@ -1,6 +1,9 @@
 .advantages__list {
   @include list-reset;
-  margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 22px 0;
 }
 
 .advantages__wrapper {
@@ -19,7 +22,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 42px 0;
   padding-left: 80px;
   color: $text;
   list-style: none;
@@ -31,12 +33,10 @@
   position: absolute;
   content: "";
   background-color: $green;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
+  top: 0;
   left: 0;
-  padding-top: 8px;
-  padding-bottom: 8px;
-
 }
 
 .advantages__item--natural::before {
@@ -49,8 +49,8 @@
   background-position: center;
   width: 26px;
   height: 29px;
-  top: 12px;
-  left: 14px;
+  top: 15px;
+  left: 17px;
 }
 
 .advantages__item--powder::before {
@@ -63,8 +63,8 @@
   background-position: center;
   width: 29px;
   height: 32px;
-  top: 10px;
-  left: 12px;
+  top: 14px;
+  left: 15px;
 }
 
 .advantages__item--food-substitute::before {
@@ -77,8 +77,8 @@
   background-position: center;
   width: 23px;
   height: 32px;
-  top: 10px;
-  left: 12px;
+  top: 14px;
+  left: 18px;
 }
 
 .advantages__item--wight::before {
@@ -91,6 +91,6 @@
   background-position: center;
   width: 26px;
   height: 29px;
-  top: 12px;
-  left: 14px;
+  top: 15px;
+  left: 17px;
 }

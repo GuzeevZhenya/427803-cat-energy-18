@@ -7,6 +7,7 @@
 .products-additional__title {
   @include font-text($oswald, 24px, 24px, 400);
   margin: 0;
+  padding-top: 24px;
 }
 
 .products-additional__text {
