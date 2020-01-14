@@ -34,14 +34,17 @@
   background-size: 100%;
   position: relative;
   display: flex;
-  justify-content: space-between;
-  padding: 190px 58px 37px;
+  flex-direction: column;
+  padding: 50px 60px;
+  min-height: 290px;
+
+
   margin-top: 39px;
 }
 
-.products-additional__gift-text {
+.gift__text {
   @include font-text($arial, 16px, 20px, 400);
-  margin: 0;
+  margin-top: auto;
   max-width: 166px;
   text-align: center;
   color: #ffffff;
