@@ -1,4 +1,6 @@
-.cat-comments {}
+.cat-comments {
+  position: relative;
+}
 
 .cat-comments__wrapper {
   @include wrapper;

@@ -21,17 +21,17 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle toggle" type="button">
-          <span class="">Показать/Скрыть Меню</span>
+          <img src="img/icon-mobile-menu.svg" alt="">
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="index.html">Главная</a>
           </li>
-          <li class="site-list__item ">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
           <li class="site-list__item site-list__item--active">
-            <a href="#">Подбор программы</a>
+            <a href="#">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -39,71 +39,75 @@
   </header>
 
   <main class="page-main">
-    <div class="page-main__wrapper">
-      <h1 class="page-main__title">Подбор программы</h1>
-      <p class="page-main__text">
-        Заполните анкету и мы подберем программу питания для вашего кота
-      </p>
-      <form action="page-main__form form">
-        <div class="form__cat-info">
-          <div class="cat-bio form__cat-bio">
-            <label for="cat__name">Имя*</label><input class="cat-info__input" id="cat__name" type="text" required
-              placeholder="Барсик" />
-            <label for="cat__weight">Вес (Кг):*</label><input class="cat-info__input" id="cat__weight" type="text"
-              required placeholder="7" />
-            <label for="cat__age">Возраст (Лет)*</label><input class="cat-info__input" id="cat__age" type="text"
-              placeholder="7" />
-          </div>
-          <div class="cat-target">
-            <input type="radio" name="selection" id="slim" value="Похудение" checked /><label
-              for="slim">Похудение</label>
-            <input type="radio" name="selection" id="pro" value="Набор массы" />
-            <label for="pro">Набор массы</label>
-            <input type="radio" name="selection" id="nothing" value="Не знаю(нужен совет)" />
-            <label for="nothing">Не знаю(нужен совет)</label>
-          </div>
+    <h1 class="page-main__title">Подбор программы</h1>
+    <p class="page-main__text">
+      Заполните анкету и мы подберем программу питания для вашего кота
+    </p>
+    <form action="page-main__form form">
+      <div class="form__cat-bio cat-bio">
+        <div class="cat-bio__wrapper">
+          <label for="cat-bio__name">Имя*</label><input class="cat-bio__input" id="cat__name" type="text" required
+            placeholder="Барсик" />
+          <label for="cat-bio__weight">Вес (Кг):*</label><input class="cat-bio__input" id="cat__weight" type="text"
+            required placeholder="7" />
+          <label for="cat-bio__age">Возраст (Лет)*</label><input class="cat-bio__input" id="cat__age" type="text"
+            placeholder="7" />
         </div>
-        <div class="cat-contacts">
-          <div class="cat-contacts__wrapper">
-            <h2 class="cat-contacts__title">
-              Контактные данные (владельца кота)
-            </h2>
-            <label for="">E-mail*</label><input class="cat-contacts__input" id="cat__email" type="text" required placeholder="kuklachev@gmail.com" />
-            <label for="">Телефон*</label><input class="cat-contacts__input" type="text" id="cat__telephon" required placeholder="8 (960) 900-60-90" />
-          </div>
+      </div>
+      <div class="cat-target">
+        .cat-
+        <input type="radio" name="selection" id="slim" value="Похудение" checked /><label for="slim">Похудение</label>
+        <input type="radio" name="selection" id="pro" value="Набор массы" />
+        <label for="pro">Набор массы</label>
+        <input type="radio" name="selection" id="nothing" value="Не знаю(нужен совет)" />
+        <label for="nothing">Не знаю(нужен совет)</label>
+      </div>
+      <div class="cat-contacts">
+        <div class="cat-contacts__wrapper">
+          <h2 class="cat-contacts__title">
+            Контактные данные (владельца кота)
+          </h2>
+          <label for="">E&#8209;mail* <input class="cat-contacts__input" id="cat__email" type="text" required
+              placeholder="kuklachev@gmail.com"></label>
+          <label for="">Телефон* <input class="cat-contacts__input" type="text" id="cat__telephon" required
+              placeholder="8 (960) 900-60-90"></label>
         </div>
-        <div class="cat-comments">
-          <div class="cat-comments__wrapper">
-            <h2 class="cat-comments__title">Комментарий</h2>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота">
-              </textarea>
-          </div>
+      </div>
+      <div class="cat-comments title-border">
+        <div class="cat-comments__wrapper">
+          <h2 class="cat-comments__title">Комментарий</h2>
+          <textarea name="" id="" cols="45" rows="10" placeholder="Расскажите обо всех повадках кота">
+            </textarea>
         </div>
-        <div class="cat-additional">
-          <div class="cat-additional__wrapper">
-            <h2 class="cat-additional__title">Дополнительно</h2>
-            <input class="cat-additional__input" id="cat__sweetener" type="checkbox" checked /><label for="">Сахарозаменитель</label>
-            <input class="cat-additional__input" id="cat__water" type="checkbox" /><label for="">Питьевая вода</label>
-            <input class="cat-additional__input" id="cat__milk" type="checkbox" /><label for="">Молоко</label>
-            <input class="cat-additional__input" id="cat__vitamins" type="checkbox" /><label for="">Витамины</label>
+      </div>
+      <div class="cat-additional">
+        <div class="cat-additional__wrapper">
+          <h2 class="cat-additional__title">Дополнительно</h2>
+          <div class="cat-additional__container">
+            <label for=""><input class="cat-additional__input" id="cat__sweetener" type="checkbox"
+                checked />Сахарозаменитель</label>
+            <label for=""><input class="cat-additional__input" id="cat__water" type="checkbox" />Питьевая вода</label>
+            <label for=""><input class="cat-additional__input" id="cat__milk" type="checkbox" />Молоко</label>
+            <label for=""><input class="cat-additional__input" id="cat__vitamins" type="checkbox" />Витамины </label>
           </div>
+          <button class="form__button button form--send" type="submit">
+            Отправить заявку
+          </button>
+          <small class="form__required">* — Обязательные поля</small>
         </div>
-        <button class="form__button button" type="submit">
-          Отправить заявку
-        </button>
-        <small class="form__required">* — Обязательные поля</small>
-      </form>
-    </div>
+      </div>
+
+    </form>
   </main>
 
-  <section class="map">
-    <img src="img/map-pin.png" alt="Местоположение магазина" />
-    <div class="map__info map__info--white">
+  <section class="map map--white">
+    <div class="map__info">
       <h3 class="map__title">Приглашаем к сотрудничеству дилеров!</h3>
       <p class="map__text">
         ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
       </p>
     </div>
+    <img src="img/map-pin.png" alt="Местоположение магазина" />
   </section>
 
   <footer class="page-footer">

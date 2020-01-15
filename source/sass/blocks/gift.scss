@@ -1,0 +1,20 @@
+.gift {
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 60px;
+  min-height: 290px;
+
+}
+
+.gift__text {
+  @include font-text($arial, 16px, 20px, 400);
+  margin-top: auto;
+  max-width: 166px;
+  text-align: center;
+  color: #ffffff;
+}

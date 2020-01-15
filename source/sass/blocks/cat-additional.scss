@@ -1,12 +1,29 @@
-.cat-additional {}
+.cat-additional {
+  & label {
+    @include font-text($oswald, 16px, 18px, 400);
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
 
-.cat-additional label {
-  @include font-text($oswald, 16px, 18px, 400);
 
+  }
+}
+
+.cat-additional__wrapper {
+  @include wrapper;
+}
+
+.cat-additional__container {
+  display: flex;
+  flex-direction: column;
 }
 
 .cat-additional__title {
   @include font-text($oswald, 24px, 24px, 400);
 }
 
-.cat-additional__input {}
+.cat-additional__input {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}

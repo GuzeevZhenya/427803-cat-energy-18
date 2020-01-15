@@ -1,3 +1,7 @@
+.products-additional{
+  border-top: 1px solid $border;
+}
+
 .products-additional__wrapper {
   @include wrapper;
   display: flex;
@@ -8,6 +12,7 @@
   @include font-text($oswald, 24px, 24px, 400);
   margin: 0;
   padding-top: 24px;
+  position: relative;
 }
 
 .products-additional__text {
@@ -28,26 +33,7 @@
 }
 
 .products-additional__gift {
-  background-image: url("../img/gift-photo-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 50px 60px;
-  min-height: 290px;
-
-
   margin-top: 39px;
-}
-
-.gift__text {
-  @include font-text($arial, 16px, 20px, 400);
-  margin-top: auto;
-  max-width: 166px;
-  text-align: center;
-  color: #ffffff;
 }
 
 .products-additional__list tr {

@@ -14,7 +14,6 @@
   @include font-text($oswald, 36px, 60px, 500);
   margin: 0;
   margin-top: 33px;
-
 }
 
 .advantages__item {
@@ -26,7 +25,7 @@
   color: $text;
   list-style: none;
   position: relative;
-
+  margin: 20px 0;
 }
 
 .advantages__item::after {

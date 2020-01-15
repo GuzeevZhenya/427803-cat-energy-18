@@ -1,22 +1,23 @@
+.page-main {
+  border-top: 1px solid $border;
+}
+
+
 .page-main__title {
   @include font-text($oswald, 36px, 60px, 400);
   @include wrapper;
-  margin: 0;
   color: $black;
   padding-bottom: 26px;
   padding-top: 17px;
 }
 
 .page-main__wrapper {
-  display: flex;
+  @include wrapper;
   flex-wrap: wrap;
   margin: 0 auto;
 }
 
 .page-main__text {
   @include wrapper;
-}
-
-.page-main {
-  border-top: 1px solid $border;
+  padding-bottom: 42px;
 }
