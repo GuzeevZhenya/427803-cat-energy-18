@@ -4,21 +4,21 @@
   flex-direction: column;
   border-top: 1px solid $border;
 
-  & tr{
-     display: flex;
-     justify-content: space-between;
+  & tr {
+    display: flex;
+    justify-content: space-between;
   }
 
-  & table{
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-     margin: 0;
-     margin-bottom: 23px;
+  & table {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 23px;
   }
 }
 
-.products__wrapper{
+.products__wrapper {
   @include wrapper;
 }
 
