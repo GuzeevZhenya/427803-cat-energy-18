@@ -1,15 +1,21 @@
-.page-header{
-
-}
-
-.page-header__wrapper {
-  @include wrapper;
-  display: flex;
-  justify-content: space-between;
+.page-header {
   padding-top: 11px;
   padding-bottom: 17px;
 }
 
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
 .page-header__logo {
   width: 195px;
+}
+
+.page-header__wrapper-container {
+  display: flex;
+  justify-content: space-between;
+  @include wrapper;
 }

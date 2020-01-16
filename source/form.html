@@ -11,31 +11,31 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo logo">
-        <picture>
-          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img src="img/logo-mobile.svg" alt="Логотип «Кэт энерджи»">
-        </picture>
-      </a>
-      <button class="main-nav__toggle toggle" type="button">
-        <img src="img/icon-mobile-menu.svg" alt="">
-      </button>
+      <div class="page-header__wrapper-container">
+        <a class="page-header__logo logo">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" width="191" height="39" alt="Логотип «Кэт энерджи»">
+          </picture>
+        </a>
+        <button class="main-nav__toggle toggle" type="button">
+          <img src="img/icon-mobile-menu.svg" width="24" height="18" alt="">
+        </button>
+      </div>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a href="#">Каталог продукции</a>
+            <a href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Подбор программы</a>
+            <a href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
-    </div>
   </header>
 
   <main class="page-main">
@@ -46,21 +46,21 @@
     <form action="page-main__form form">
       <div class="form__cat-bio cat-bio">
         <div class="cat-bio__wrapper">
-          <label for="cat-bio__name">Имя*</label><input class="cat-bio__input" id="cat__name" type="text" required
-            placeholder="Барсик" />
-          <label for="cat-bio__weight">Вес (Кг):*</label><input class="cat-bio__input" id="cat__weight" type="text"
-            required placeholder="7" />
-          <label for="cat-bio__age">Возраст (Лет)*</label><input class="cat-bio__input" id="cat__age" type="text"
-            placeholder="7" />
+          <label for="cat-bio__name">Имя:*<input class="cat-bio__input" id="cat__name" type="text" required
+              placeholder="Барсик" /></label>
+          <label for="cat-bio__weight">Вес&#160;(Кг):*<input class="cat-bio__input" id="cat__weight" type="text"
+              required placeholder="7" /></label>
+          <label for="cat-bio__age">Возраст&#160;(Лет):<input class="cat-bio__input" id="cat__age" type="text"
+              placeholder="7" /></label>
         </div>
       </div>
       <div class="cat-target">
-        .cat-
-        <input type="radio" name="selection" id="slim" value="Похудение" checked /><label for="slim">Похудение</label>
-        <input type="radio" name="selection" id="pro" value="Набор массы" />
-        <label for="pro">Набор массы</label>
-        <input type="radio" name="selection" id="nothing" value="Не знаю(нужен совет)" />
-        <label for="nothing">Не знаю(нужен совет)</label>
+        <div class="cat-target__wrapper">
+          <label for="slim"><input type="radio" name="selection" id="slim" value="Похудение" checked />Похудение</label>
+          <label for="pro"><input type="radio" name="selection" id="pro" value="Набор массы" />Набор массы</label>
+          <label for="nothing"><input type="radio" name="selection" id="nothing" value="Не знаю(нужен совет)" />Не
+            знаю(нужен совет) </label>
+        </div>
       </div>
       <div class="cat-contacts">
         <div class="cat-contacts__wrapper">
@@ -124,9 +124,6 @@
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href="">
-            <svg class="social__icon" width="10" height="19">
-              <use xlink:href="img/sprite.svg#icon-fb"></use>
-            </svg>
           </a>
         </li>
       </ul>

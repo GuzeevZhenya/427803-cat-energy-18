@@ -1,0 +1,11 @@
+.toggle {
+  min-width: 24px;
+  min-height: 18px;
+  border: none;
+  background-color: transparent;
+
+  & img {
+    width: 24px;
+    height: 18px;
+  }
+}

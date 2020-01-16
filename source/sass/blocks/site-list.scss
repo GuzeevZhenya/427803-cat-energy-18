@@ -1,16 +1,21 @@
 .site-list {
-  display: block;
-  @include wrapper;
+  @include list-reset;
+
 }
 
 
 .site-list__item {
-  @include font-text($oswald, 20px, 24px, 400);
-  list-style: none;
+  @include font-text($oswald, 20px, 20px, 500);
+  padding: 24px 0;
+  text-align: center;
+  border-top: 1px solid $border;
+
+
+
 
   & a {
-    text-decoration: none;
     color: $black;
+    text-decoration: none;
   }
 
 }
