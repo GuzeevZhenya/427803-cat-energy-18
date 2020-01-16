@@ -7,7 +7,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 
 .page-header__logo {
@@ -15,7 +14,7 @@
 }
 
 .page-header__wrapper-container {
+  @include wrapper;
   display: flex;
   justify-content: space-between;
-  @include wrapper;
 }

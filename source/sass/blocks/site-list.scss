@@ -1,8 +1,6 @@
 .site-list {
   @include list-reset;
-
 }
-
 
 .site-list__item {
   @include font-text($oswald, 20px, 20px, 500);
@@ -10,12 +8,8 @@
   text-align: center;
   border-top: 1px solid $border;
 
-
-
-
   & a {
     color: $black;
     text-decoration: none;
   }
-
 }
