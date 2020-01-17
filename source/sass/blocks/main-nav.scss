@@ -1,4 +1,9 @@
 .main-nav {
   display: block;
   width: 100%;
+
+  @media (min-width: $table-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

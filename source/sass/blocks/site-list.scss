@@ -1,5 +1,12 @@
 .site-list {
   @include list-reset;
+
+  @media (min-width: $table-width) {
+    @include wrapper;
+    display: flex;
+    justify-content: space-between;
+    min-width: 516px;
+  }
 }
 
 .site-list__item {
@@ -11,5 +18,9 @@
   & a {
     color: $black;
     text-decoration: none;
+  }
+
+  @media (min-width: $table-width) {
+    border: none;
   }
 }

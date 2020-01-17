@@ -44,8 +44,12 @@
         <div class="promo__header">
           <h2 class="promo__title promo__title--white">Функциональное питание для котов</h2>
           <p class="promo__text">Занялся собой? Займись котом!</p>
-          <img class="promo__image" src="img/index-can-mobile@1x.png" alt="Кошачий корм" />
-          <a href="#" class="promo__pickup button button--size">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+            <img class="promo__image" src="img/index-can-mobile@1x.png" alt="Кошачий корм" />
+          </picture>
+          <a href="#" class="promo__pickup button button--size button--tablet">
             Подобрать программу
           </a>
         </div>

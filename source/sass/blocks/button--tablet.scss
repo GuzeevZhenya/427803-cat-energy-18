@@ -1,0 +1,10 @@
+ .button--tablet {
+   @media (min-width: $table-width) {
+     position: absolute;
+     max-width: 245px;
+     max-height: 50px;
+     top: 307px;
+     left: 122px;
+     padding: 18px 26px;
+   }
+ }
