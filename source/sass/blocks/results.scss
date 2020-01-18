@@ -1,23 +1,44 @@
 .results {
   margin-bottom: 25px;
+
+  @media (min-width: $table-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .results__amount {
   @include font-text($oswald, 24px, 24px, 400);
+
+  @media (min-width: $table-width) {
+    @include font-text($oswald, 30px, 37px, 400);
+    min-width: 100px;
+
+    margin: 16px 0;
+
+  }
 }
 
 .results__wrapper {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $table-width) {
+    min-width: 365px;
+  }
 }
 
 .results__item {
-  margin: 0;
   border: 1px solid $price;
   position: relative;
   width: 123px;
   text-align: center;
   padding: 16px 0;
+
+  @media (min-width: $table-width) {
+    min-width: 162px;
+  }
 }
 
 .results__action {
@@ -28,6 +49,13 @@
   top: 53px;
   background-color: $bgc;
   width: 87px;
+
+  @media (min-width: $table-width) {
+    @include font-text($arial, 14px, 14px, 400);
+    width: 143px;
+    left: 9px;
+    top: 63px;
+  }
 }
 
 
@@ -37,7 +65,25 @@
   margin: 0;
   margin-top: 38px;
   margin-bottom: 46px;
+
+  @media (min-width: $table-width) {
+    @include font-text($arial, 20px, 20px, 400);
+    min-width: 180px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+
 }
+
+.results__cost span {
+  @media (min-width: $table-width) {
+    display: block;
+    text-align: end;
+    padding-top: 7px;
+  }
+}
+
 
 .results-block__photo label {
   @include font-text($oswald, 16px, 20px, 400);

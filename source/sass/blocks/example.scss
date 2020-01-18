@@ -12,6 +12,10 @@
   @include font-text($oswald, 36px, 60px, 500);
   padding-bottom: 34px;
   margin: 0;
+
+  @media (min-width: $table-width) {
+    @include font-text($oswald, 60px, 60px, 400);
+  }
 }
 
 .example__text {
@@ -19,4 +23,9 @@
   margin: 0;
   color: $text;
   padding-bottom: 27px;
+
+  @media (min-width: $table-width) {
+    @include font-text($arial, 16px, 24px, 400);
+    width: 680px;
+  }
 }

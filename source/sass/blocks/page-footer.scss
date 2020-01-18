@@ -1,10 +1,11 @@
 .page-footer {
   background-color: $bgc;
-   @media (min-width: $table-width) {
-     min-width: 162px;
-     padding-top: 63px;
-     padding-bottom: 61px;
-   }
+
+  @media (min-width: $table-width) {
+    min-width: 162px;
+    padding-top: 63px;
+    padding-bottom: 61px;
+  }
 }
 
 .page-footer__wrapper {

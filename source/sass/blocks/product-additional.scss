@@ -1,11 +1,13 @@
 .products-additional {
   border-top: 1px solid $border;
+
 }
 
 .products-additional__wrapper {
   @include wrapper;
   display: flex;
   flex-direction: column;
+  
 }
 
 .products-additional__title {
@@ -21,6 +23,10 @@
   text-transform: uppercase;
   margin-top: 14px;
   margin-bottom: 16px;
+
+  @media (min-width: $table-width) {
+    max-width: 290px;
+  }
 }
 
 .products-additional__value {
@@ -39,4 +45,17 @@
 .products-additional__list tr {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $table-width) {
+    flex-direction: column;
+
+  }
+}
+
+.products-additional__list {
+  @media (min-width: $table-width) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 290px;
+  }
 }

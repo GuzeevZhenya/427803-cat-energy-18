@@ -3,6 +3,7 @@
 }
 
 .product-groups__item {
+  position: relative;
   background-color: $bgc;
   padding: 22px 34px 23px 20px;
   list-style: none;
@@ -12,7 +13,82 @@
     display: flex;
     flex-direction: column;
     padding: 80px 60px 60px 52px;
-    margin: 0px;
+  }
+
+  &--slim::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-cat-slim.svg");
+    width: 35px;
+    height: 49px;
+    left: 27px;
+    top: 10px;
+
+    @media (min-width: $table-width) {
+      position: absolute;
+      left: 478px;
+      top: 52px;
+      width: 140px;
+      height: 194px;
+      background-image: url("../img/icon-cat-slim.svg");
+    }
+  }
+
+  &--slim::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $green;
+    left: 19px;
+    top: 15px;
+
+    @media (min-width: $table-width) {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: $green;
+      left: 448px;
+      top: 62px;
+    }
+  }
+
+  &--pro::after {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/icon-cat-pro.svg");
+    width: 67px;
+    height: 28px;
+    left: 10px;
+    top: 25px;
+
+    @media (min-width: $table-width) {
+      width: 256px;
+      height: 107px;
+      left: 400px;
+      top: 92px;
+    }
+  }
+
+  &--pro::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $green;
+    left: 19px;
+    top: 15px;
+
+    @media (min-width: $table-width) {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: $green;
+      left: 448px;
+      top: 62px;
+    }
   }
 }
 
@@ -29,7 +105,8 @@
   color: $text;
 
   @media (min-width: $table-width) {
-    max-width: 275px;
+    @include font-text($arial, 16px, 24px, 400);
+    max-width: 350px;
     border: none;
   }
 }
@@ -41,71 +118,39 @@
   text-decoration: none;
   text-transform: uppercase;
 
+  @media (min-width: $table-width) {
+    @include font-text($oswald, 20px, 20px, 500);
+    color: $black;
+  }
+
 
   &::before {
     content: "";
     position: absolute;
-    background-image: url("../../img/icon-right-arrow-verylong.svg");
-    width: 20px;
+    background-image: url("../../img/icon-right-arrow-long.svg");
+    width: 15px;
     height: 7px;
     right: -32px;
     top: 10px;
+
+    @media (min-width: $table-width) {
+      left: 130px;
+      top: 7px;
+      width: 15px;
+      height: 7px;
+    }
   }
 }
 
 
 .product-groups__title {
   @include font-text($oswald, 24px, 37px, 500);
-  position: relative;
   margin: 0;
   padding-left: 72px;
   text-transform: uppercase;
 
-  &--slim::after {
-    position: absolute;
-    content: "";
-    background-image: url("../../img/icon-cat-slim.svg");
-    width: 35px;
-    height: 49px;
-    left: 0;
-
-    @media (min-width: $table-width) {
-      right: 0;
-      width: 140px;
-      height: 194px;
-      background-image: url("../../img/icon-cat-slim.svg");
-    }
+  @media (min-width: $table-width) {
+    @include font-text($oswald, 36px, 37px, 500);
+    padding: 0;
   }
-
-  &--slim::before {
-    position: absolute;
-    content: "";
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: $green;
-    left: -12px;
-  }
-
-  &--pro::after {
-    position: absolute;
-    content: "";
-    background-image: url("../../img/icon-cat-pro.svg");
-    width: 67px;
-    height: 28px;
-    left: 0;
-    top: 7px;
-  }
-
-  &--pro::before {
-    position: absolute;
-    content: "";
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: $green;
-    left: 10px;
-  }
-
-
 }

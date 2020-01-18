@@ -1,9 +1,28 @@
+.advantages {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $table-width) {
+    width: 768px;
+    margin: 0 auto;
+    border-bottom: 1px solid $border;
+  }
+}
+
 .advantages__list {
   @include list-reset;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   padding: 22px 0;
+  width: 100%;
+
+
+  @media (min-width: $table-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+  }
 }
 
 .advantages__wrapper {
@@ -14,6 +33,12 @@
   @include font-text($oswald, 36px, 60px, 500);
   margin: 0;
   margin-top: 33px;
+
+  @media (min-width: $table-width) {
+    @include font-text($oswald, 60px, 60px, 500);
+    margin-bottom: 155px;
+    margin-top: 50px;
+  }
 }
 
 .advantages__item {
@@ -26,6 +51,28 @@
   list-style: none;
   position: relative;
   margin: 20px 0;
+
+  @media (min-width: $table-width) {
+    @include font-text($arial, 16px, 24px, 400);
+    padding: 0;
+    margin: 0;
+    margin-bottom: 205px;
+    max-width: 354px;
+    padding-right: 100px;
+  }
+
+
+  &:nth-last-of-type(1) {
+    @media (min-width: $table-width) {
+      margin-bottom: 105px;
+    }
+  }
+
+  &:nth-last-of-type(2) {
+    @media (min-width: $table-width) {
+      margin-bottom: 105px;
+    }
+  }
 }
 
 .advantages__item::after {
@@ -36,6 +83,10 @@
   height: 60px;
   top: 0;
   left: 0;
+
+  @media (min-width: $table-width) {
+    top: -100px;
+  }
 }
 
 .advantages__item--natural::before {
@@ -50,6 +101,10 @@
   height: 29px;
   top: 15px;
   left: 17px;
+
+  @media (min-width: $table-width) {
+    top: -85px;
+  }
 }
 
 .advantages__item--powder::before {
@@ -64,6 +119,10 @@
   height: 32px;
   top: 14px;
   left: 15px;
+
+  @media (min-width: $table-width) {
+    top: -85px;
+  }
 }
 
 .advantages__item--food-substitute::before {
@@ -78,6 +137,10 @@
   height: 32px;
   top: 14px;
   left: 18px;
+
+  @media (min-width: $table-width) {
+    top: -85px;
+  }
 }
 
 .advantages__item--wight::before {
@@ -92,4 +155,8 @@
   height: 29px;
   top: 15px;
   left: 17px;
+
+  @media (min-width: $table-width) {
+    top: -85px;
+  }
 }

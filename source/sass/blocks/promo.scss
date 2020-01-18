@@ -2,7 +2,7 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
-   position: relative;
+  position: relative;
 
   @media (min-width: $table-width) {
     background-image: none;
@@ -55,5 +55,3 @@
     text-align: left;
   }
 }
-
-
