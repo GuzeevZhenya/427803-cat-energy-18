@@ -11,31 +11,31 @@
 
 <body>
   <header class="page-header">
-      <div class="page-header__wrapper-container">
-        <a class="page-header__logo">
-          <picture>
-            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img src="img/logo-mobile.svg" width="191" height="39" alt="Логотип «Кэт энерджи»">
-          </picture>
-        </a>
-        <button class="main-nav__toggle toggle" type="button">
-          <img src="img/icon-mobile-menu.svg" width="24" height="18" alt="">
-        </button>
-      </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+    <div class="page-header__wrapper-container">
+      <a class="page-header__logo">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" width="191" height="39" alt="Логотип «Кэт энерджи»">
+        </picture>
+      </a>
+      <button class="main-nav__toggle toggle" type="button">
+        <img src="img/icon-mobile-menu.svg" width="24" height="18" alt="">
+      </button>
+    </div>
+    <nav class="main-nav">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a href="#">Главная</a>
+        </li>
+        <li class="site-list__item ">
+          <a href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <main class="page-main">
@@ -104,10 +104,12 @@
     <div class="map__info">
       <h3 class="map__title">Приглашаем к сотрудничеству дилеров!</h3>
       <p class="map__text">
-        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        ул. Большая Конюшенная, д. 19/8 <span class="map__text--selected">Санкт-Петербург</span>
       </p>
     </div>
-    <img src="img/map-pin.png" alt="Местоположение магазина" />
+    <iframe class="map__location"
+      src="https://yandex.ru/map-widget/v1/?um=constructor%3A7efb42ed7331205e4fab45bb8e6c1f8c798186c42d9283f4ccb7c04d8fc14d5e&amp;source=constructor"
+      width="320" height="368"></iframe>
   </section>
 
   <footer class="page-footer">
@@ -123,8 +125,7 @@
           <a class="social__link social__link--instagram" href=""></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="">
-          </a>
+          <a class="social__link social__link--facebook" href=""></a>
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
