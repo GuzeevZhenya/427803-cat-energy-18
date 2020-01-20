@@ -7,6 +7,12 @@
   @media (min-width: $table-width) {
     background-image: none;
   }
+
+  /*
+  @include retina {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
+  */
 }
 
 .promo__wrapper {
@@ -21,22 +27,18 @@
   color: #ffffff;
   padding-bottom: 20px;
 
+  &--white {
+    @include font-text($oswald, 36px, 36px, 400);
+  }
+
   @media (min-width: $table-width) {
+    @include font-text($oswald, 60px, 60px, 400);
     padding-top: 63px;
     padding-bottom: 46px;
     color: $black;
     max-width: 427px;
     margin-left: 90px;
     text-align: left;
-  }
-
-  &--white {
-    @include font-text($oswald, 36px, 36px, 400);
-
-    //Решить данную проблему
-    @media (min-width: $table-width) {
-      @include font-text($oswald, 60px, 60px, 400);
-    }
   }
 }
 
