@@ -1,5 +1,6 @@
 .products {
   @include list-reset;
+  @include wrapper;
   display: flex;
   flex-direction: column;
   border-top: 1px solid $border;
@@ -7,12 +8,21 @@
 
   @media (min-width: $table-width) {
     flex-direction: row;
+    justify-content: space-between;
+    background-color: $bgc;
   }
 
 
   & tr {
     display: flex;
     justify-content: space-between;
+
+    @media (min-width: $table-width) {
+      @include font-text($arial, 16px, 16px, 400);
+      border-bottom: 1px solid $border;
+      padding: 10px 0;
+    }
+
   }
 
   & table {
@@ -26,6 +36,7 @@
 
 }
 
+/*
 .products__wrapper {
   @include wrapper;
 
@@ -36,7 +47,7 @@
     flex-wrap: wrap;
   }
 }
-
+*/
 .products__item {
   display: flex;
   justify-content: space-between;
@@ -46,9 +57,15 @@
 
   @media (min-width: $table-width) {
     width: 324px;
-    flex-direction: row;
+  }
+
+  & img {
+    margin: 0 auto;
+    background-color: $bgc;
   }
 }
+
+
 
 .products__item-wrapper {
   display: flex;
@@ -58,6 +75,7 @@
   @media (min-width: $table-width) {
     width: 100%;
     justify-content: space-between;
+    flex: none;
   }
 }
 
@@ -68,6 +86,13 @@
   padding-top: 24px;
   width: 75px;
   text-transform: uppercase;
+
+  @media (min-width: $table-width) {
+    @include font-text($oswald, 20px, 20px, 400);
+    width: 135px;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 .products__criteria {

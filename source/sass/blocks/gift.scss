@@ -8,6 +8,12 @@
   flex-direction: column;
   padding: 50px 60px;
   min-height: 290px;
+
+  @media (min-width: $table-width) {
+    min-height: 200px;
+    align-items: flex-end;
+    padding-right: 125px;
+  }
 }
 
 .gift__text {
@@ -16,4 +22,9 @@
   max-width: 166px;
   text-align: center;
   color: #ffffff;
+
+  @media (min-width: $table-width) {
+    max-width: 150px;
+    text-align: left;
+  }
 }

@@ -6,6 +6,10 @@
   @include wrapper;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $table-width) {
+    margin: 0 35px;
+  }
 }
 
 .products-additional__wrapper-container {
