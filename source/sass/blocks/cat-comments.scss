@@ -10,3 +10,11 @@
 .cat-comments__title {
   @include font-text($oswald, 24px, 24px, 400);
 }
+
+.cot-comments__textarea{
+  @include font-text($oswald, 16px, 18px, 400);
+  text-transform: uppercase;
+  width: 280px;
+  min-height: 150px;
+  padding: 13px;
+}

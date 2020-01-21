@@ -1,13 +1,18 @@
 .page-header {
   padding-top: 11px;
   padding-bottom: 17px;
+  width: 320px;
 
   @media (min-width: $table-width) {
+    width: $table-width;
     display: flex;
     padding: 0;
     padding-top: 24px;
     justify-content: space-between;
+  }
 
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
   }
 }
 
@@ -25,4 +30,8 @@
   @include wrapper;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $table-width) {
+    margin: 0;
+  }
 }

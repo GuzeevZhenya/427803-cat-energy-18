@@ -10,7 +10,7 @@
 }
 
 .site-list__item {
-  @include font-text($oswald, 20px, 20px, 500);
+  @include font-text($oswald, 20px, 20px, 400);
   padding: 24px 0;
   text-align: center;
   border-top: 1px solid $border;
@@ -18,9 +18,19 @@
   & a {
     color: $black;
     text-decoration: none;
+
+    @media (min-width: $desktop-width) {
+      color: #ffffff;
+    }
   }
 
   @media (min-width: $table-width) {
+    @include font-text($oswald, 18px, 25px, 400);
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
+
 }

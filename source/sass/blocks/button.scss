@@ -9,4 +9,12 @@
   border: none;
   text-align: center;
   text-transform: uppercase;
+  border-bottom: 1px solid $border;
+  border-top: 1px solid $border;
+  margin-bottom: 24px;
+  margin-top: 24px;
+
+  @media (min-width: $table-width) {
+    border: none;
+  }
 }

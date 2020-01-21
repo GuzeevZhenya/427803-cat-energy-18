@@ -30,8 +30,9 @@
 .products-additional__title {
   @include font-text($oswald, 24px, 24px, 400);
   margin: 0;
-  padding-top: 24px;
+  padding: 30px 0;
   position: relative;
+
 
   @media (min-width: $table-width) {
     @include font-text($oswald, 36px, 36px, 400);
@@ -45,8 +46,9 @@
   @include font-text($oswald, 16px, 16px, 400);
   margin: 0;
   text-transform: uppercase;
-  margin-top: 14px;
-  margin-bottom: 16px;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  border-top: 1px solid $price;
 
   @media (min-width: $table-width) {
     @include font-text($arial, 16px, 16px, 500);

@@ -8,6 +8,12 @@
     padding: 0 30px;
     max-width: 768px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding: 0 40px;
+    max-width: 1300px;
+  }
 }
 
 @mixin retina {
@@ -18,6 +24,12 @@
 
 @mixin tablet-width {
   @media (min-width: $table-width) {
+    @content;
+  }
+}
+
+@mixin desktop-width {
+  @media (min-width: $desktop-width) {
     @content;
   }
 }
