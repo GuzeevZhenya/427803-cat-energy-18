@@ -4,12 +4,13 @@
   display: flex;
   flex-direction: column;
   border-top: 1px solid $border;
-  flex-wrap: wrap;
 
   @media (min-width: $table-width) {
     flex-direction: row;
     justify-content: space-between;
-    background-color: $bgc;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+    border: none;
   }
 
 
@@ -51,17 +52,24 @@
 .products__item {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+
   padding-bottom: 24px;
   border-bottom: 1px solid $border;
 
   @media (min-width: $table-width) {
+    background-color: $bgc;
     width: 324px;
+    margin-top: 140px;
+    border: none;
+    flex-wrap: wrap;
   }
 
+
   & img {
-    margin: 0 auto;
-    background-color: $bgc;
+    @media (min-width: $table-width) {
+      margin: 0 auto;
+    }
+
   }
 }
 
@@ -70,12 +78,14 @@
 .products__item-wrapper {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  min-width: 140px;
+  justify-content: space-between;
 
   @media (min-width: $table-width) {
     width: 100%;
     justify-content: space-between;
     flex: none;
+    padding: 0 37px;
   }
 }
 

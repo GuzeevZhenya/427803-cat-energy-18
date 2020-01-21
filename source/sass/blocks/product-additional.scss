@@ -1,5 +1,10 @@
 .products-additional {
   border-top: 1px solid $border;
+  overflow: hidden;
+
+  @media (min-width: $table-width) {
+    border: none;
+  }
 }
 
 .products-additional__wrapper {
@@ -75,7 +80,7 @@
 .products-additional__list tr {
   display: flex;
   justify-content: space-between;
-  min-width: 290px;
+  min-width: 280px;
 
 }
 

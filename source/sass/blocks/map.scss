@@ -1,6 +1,4 @@
 .map {
-  padding-top: 31px;
-  padding-bottom: 26px;
   background-color: $bgc;
 
   @media (min-width: $table-width) {
@@ -10,6 +8,8 @@
 
 .map__title {
   @include font-text($oswald, 16px, 20px, 500);
+  max-width: 140px;
+  margin: 0;
 
   @media (min-width: $table-width) {
     @include font-text($oswald, 20px, 25px, 500);
@@ -22,6 +22,8 @@
 
 .map__text {
   @include font-text($arial, 16px, 20px, 400);
+  margin: 0;
+  max-width: 140px;
   color: $text;
 
   @media (min-width: $table-width) {
@@ -32,6 +34,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    margin-right: 40px;
   }
 
   &--selected {
@@ -45,6 +48,9 @@
   @include wrapper;
   display: flex;
   justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 29px;
+
 
   @media (min-width: $table-width) {
     align-items: center;
