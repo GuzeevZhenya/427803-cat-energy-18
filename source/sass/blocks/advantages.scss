@@ -7,6 +7,12 @@
     margin: 0 auto;
     border-bottom: 1px solid $border;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1300px;
+    margin: 0 auto;
+    border-bottom: 1px solid $border;
+  }
 }
 
 .advantages__list {
@@ -23,6 +29,8 @@
     flex-wrap: wrap;
     padding: 0;
   }
+
+
 }
 
 .advantages__wrapper {
@@ -38,6 +46,12 @@
     @include font-text($oswald, 60px, 60px, 500);
     margin-bottom: 155px;
     margin-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-top: 80px;
+    padding-bottom: 192px;
   }
 }
 
@@ -61,16 +75,31 @@
     padding-right: 100px;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 25%;
+    margin-bottom: 265px;
+    padding-right: 0;
+  }
+
+
 
   &:nth-last-of-type(1) {
     @media (min-width: $table-width) {
       margin-bottom: 105px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 265px;
     }
   }
 
   &:nth-last-of-type(2) {
     @media (min-width: $table-width) {
       margin-bottom: 105px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 265px;
     }
   }
 }

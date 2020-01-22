@@ -14,6 +14,8 @@
   }
 
 
+
+
   & tr {
     display: flex;
     justify-content: space-between;
@@ -62,6 +64,12 @@
     border: none;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 245px;
+    margin-top: 0;
+  }
+
 
 
   & img {

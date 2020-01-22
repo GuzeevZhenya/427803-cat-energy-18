@@ -1,5 +1,12 @@
 .product-groups__list {
   @include list-reset;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+
+  }
 }
 
 .product-groups__item {
@@ -15,6 +22,11 @@
     padding: 80px 60px 60px 52px;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding: 80px 55px 60px 52px;
+  }
+
   &--slim::after {
     position: absolute;
     content: "";
@@ -25,13 +37,19 @@
     top: 10px;
 
     @media (min-width: $table-width) {
-      position: absolute;
       right: 0;
       left: auto;
       top: 52px;
       width: 140px;
       height: 194px;
       background-image: url("../img/icon-cat-slim.svg");
+    }
+
+    @media (min-width: $table-width) {
+      width: 70px;
+      height: 97px;
+      left: 66px;
+      top: 40px;
     }
   }
 
@@ -53,6 +71,13 @@
       left: 448px;
       top: 62px;
     }
+
+    @media (min-width: $table-width) {
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      left: 52px;
+    }
   }
 
   &--pro::after {
@@ -69,6 +94,13 @@
       height: 107px;
       left: 400px;
       top: 92px;
+    }
+
+    @media (min-width: $table-width) {
+      width: 134px;
+      height: 56px;
+      top: 69px;
+      left: 34px;
     }
   }
 
@@ -90,6 +122,13 @@
       left: 448px;
       top: 62px;
     }
+
+     @media (min-width: $table-width) {
+       width: 100px;
+       height: 100px;
+       top: 47px;
+       left: 52px;
+     }
   }
 }
 
@@ -109,6 +148,12 @@
     @include font-text($arial, 16px, 24px, 400);
     max-width: 350px;
     border: none;
+  }
+
+  @media (min-width: $table-width) {
+    @include font-text($arial, 16px, 24px, 400);
+    max-width: 455px;
+    margin-top: 84px;
   }
 }
 
@@ -153,5 +198,10 @@
   @media (min-width: $table-width) {
     @include font-text($oswald, 36px, 37px, 500);
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-text($oswald, 36px, 37px, 500);
+    padding-left: 163px;
   }
 }
