@@ -7,16 +7,13 @@
 
   @media (min-width: $table-width) {
     flex-direction: row;
-    justify-content: space-between;
+
     background-color: #ffffff;
     flex-wrap: wrap;
     border: none;
   }
 
-
-
-
-  & tr {
+  tr {
     display: flex;
     justify-content: space-between;
 
@@ -28,15 +25,13 @@
 
   }
 
-  & table {
+  table {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
     margin-bottom: 23px;
   }
-
-
 }
 
 /*
@@ -68,18 +63,20 @@
   @media (min-width: $desktop-width) {
     max-width: 245px;
     margin-top: 0;
+    margin-right: 80px;
+    margin-bottom: 142px;
   }
 
-
-
-  & img {
+  img {
     @media (min-width: $table-width) {
       margin: 0 auto;
     }
-
   }
 }
 
+.products__item:nth-child(4n+4) {
+  margin-right: 0;
+}
 
 
 .products__item-wrapper {

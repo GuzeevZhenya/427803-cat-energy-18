@@ -1,9 +1,16 @@
 .main-nav {
   display: block;
 
+
   @media (min-width: $table-width) {
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
   }
+
+  @media (min-width: $desktop-width) {
+    z-index: 1;
+  }
+
+
 }

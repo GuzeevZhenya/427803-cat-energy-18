@@ -4,15 +4,21 @@
   padding-bottom: 39px;
 }
 
+.example__blocks {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
 .example__wrapper {
   @include wrapper;
 
   @media (min-width: $desktop-width) {
     margin-top: -168px;
   }
-
-
-
 }
 
 .example__title {
@@ -25,8 +31,6 @@
   }
 
   @media (min-width: $desktop-width) {}
-
-
 }
 
 .example__text {
@@ -35,6 +39,7 @@
   color: $text;
   padding-top: 34px;
   padding-bottom: 27px;
+  width: 270px;
 
   @media (min-width: $table-width) {
     @include font-text($arial, 16px, 24px, 400);
@@ -45,5 +50,4 @@
     padding-top: 157px;
     max-width: 435px;
   }
-
 }

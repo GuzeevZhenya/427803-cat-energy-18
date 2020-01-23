@@ -17,4 +17,8 @@
   @media (min-width: $table-width) {
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 188px;
+  }
 }

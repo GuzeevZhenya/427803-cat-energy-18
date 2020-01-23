@@ -20,6 +20,7 @@
     display: flex;
     flex-direction: column;
     padding: 80px 60px 60px 52px;
+   
   }
 
   @media (min-width: $desktop-width) {
@@ -45,7 +46,7 @@
       background-image: url("../img/icon-cat-slim.svg");
     }
 
-    @media (min-width: $table-width) {
+    @media (min-width: $desktop-width) {
       width: 70px;
       height: 97px;
       left: 66px;
@@ -72,7 +73,7 @@
       top: 62px;
     }
 
-    @media (min-width: $table-width) {
+    @media (min-width: $desktop-width) {
       width: 100px;
       height: 100px;
       top: 47px;
@@ -96,7 +97,7 @@
       top: 92px;
     }
 
-    @media (min-width: $table-width) {
+    @media (min-width: $desktop-width) {
       width: 134px;
       height: 56px;
       top: 69px;
@@ -123,12 +124,12 @@
       top: 62px;
     }
 
-     @media (min-width: $table-width) {
-       width: 100px;
-       height: 100px;
-       top: 47px;
-       left: 52px;
-     }
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      right: 0;
+    }
   }
 }
 
@@ -150,7 +151,7 @@
     border: none;
   }
 
-  @media (min-width: $table-width) {
+  @media (min-width: $desktop-width) {
     @include font-text($arial, 16px, 24px, 400);
     max-width: 455px;
     margin-top: 84px;

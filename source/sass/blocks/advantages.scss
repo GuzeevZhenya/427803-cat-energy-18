@@ -44,7 +44,7 @@
 
   @media (min-width: $table-width) {
     @include font-text($oswald, 60px, 60px, 500);
-    margin-bottom: 155px;
+    margin-bottom: 75px;
     margin-top: 50px;
   }
 
@@ -70,7 +70,8 @@
     @include font-text($arial, 16px, 24px, 400);
     padding: 0;
     margin: 0;
-    margin-bottom: 205px;
+    padding-top: 120px;
+    margin-bottom: 140px;
     max-width: 354px;
     padding-right: 100px;
   }
@@ -114,7 +115,7 @@
   left: 0;
 
   @media (min-width: $table-width) {
-    top: -100px;
+    top: 0;
   }
 }
 
@@ -132,7 +133,7 @@
   left: 17px;
 
   @media (min-width: $table-width) {
-    top: -85px;
+    top: 15px;
   }
 }
 
@@ -150,7 +151,7 @@
   left: 15px;
 
   @media (min-width: $table-width) {
-    top: -85px;
+    top: 15px;
   }
 }
 
@@ -162,13 +163,13 @@
   background-image: url("../img/advantage-dining@1x.png");
   background-repeat: no-repeat;
   background-position: center;
-  width: 23px;
+  width: 24px;
   height: 32px;
   top: 14px;
   left: 18px;
 
   @media (min-width: $table-width) {
-    top: -85px;
+    top: 15px;
   }
 }
 
@@ -186,6 +187,6 @@
   left: 17px;
 
   @media (min-width: $table-width) {
-    top: -85px;
+    top: 15px;
   }
 }
