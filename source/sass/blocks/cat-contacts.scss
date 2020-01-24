@@ -10,6 +10,10 @@
 
 .cat-contacts__wrapper {
   @include wrapper;
+
+  @media (min-width: $table-width) {
+    margin: 0 40px;
+  }
 }
 
 .cat-contacts__title {

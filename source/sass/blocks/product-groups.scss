@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: column;
     padding: 80px 60px 60px 52px;
-   
+
   }
 
   @media (min-width: $desktop-width) {
@@ -38,7 +38,7 @@
     top: 10px;
 
     @media (min-width: $table-width) {
-      right: 0;
+      right: 90px;
       left: auto;
       top: 52px;
       width: 140px;
@@ -84,7 +84,7 @@
   &--pro::after {
     position: absolute;
     content: "";
-    background-image: url("../../img/icon-cat-pro.svg");
+    background-image: url("../img/icon-cat-pro.svg");
     width: 67px;
     height: 28px;
     left: 10px;
@@ -93,8 +93,9 @@
     @media (min-width: $table-width) {
       width: 256px;
       height: 107px;
-      left: 400px;
-      top: 92px;
+      right: 45px;
+      left: auto;
+      top: 102px;
     }
 
     @media (min-width: $desktop-width) {
@@ -128,7 +129,7 @@
       width: 100px;
       height: 100px;
       top: 47px;
-      right: 0;
+      left: 52px;
     }
   }
 }
@@ -154,7 +155,7 @@
   @media (min-width: $desktop-width) {
     @include font-text($arial, 16px, 24px, 400);
     max-width: 455px;
-    margin-top: 84px;
+    margin-top: 75px;
   }
 }
 
@@ -168,20 +169,20 @@
   @media (min-width: $table-width) {
     @include font-text($oswald, 20px, 20px, 500);
     color: $black;
+    width: 150px;
   }
-
 
   &::before {
     content: "";
     position: absolute;
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     width: 15px;
     height: 7px;
     right: -32px;
     top: 10px;
 
     @media (min-width: $table-width) {
-      left: 130px;
+      right: 0;
       top: 7px;
       width: 15px;
       height: 7px;

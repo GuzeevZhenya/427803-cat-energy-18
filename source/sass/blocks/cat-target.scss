@@ -1,4 +1,5 @@
 .cat-target {
+  @include wrapper;
 
   & label {
     @include font-text($oswald, 16px, 18px, 400);
@@ -7,6 +8,11 @@
     @media (min-width: $table-width) {
       text-transform: uppercase;
     }
+
+    @media (min-width: $desktop-width) {
+     margin-bottom: 35px;
+    }
+
   }
 
   & input {
@@ -24,5 +30,10 @@
     border: 1px solid $border;
     padding: 24px 0 24px 28px;
     margin: 72px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+    margin: 0;
   }
 }

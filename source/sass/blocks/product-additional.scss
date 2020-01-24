@@ -1,9 +1,11 @@
 .products-additional {
   border-top: 1px solid $border;
   overflow: hidden;
+
 }
 
 .products-additional__wrapper {
+  min-width: 708px;
   @include wrapper;
   display: flex;
   flex-direction: column;
@@ -13,6 +15,7 @@
   @media (min-width: $table-width) {
     display: flex;
     flex-direction: column;
+
   }
 
   @media (min-width: $desktop-width) {
@@ -29,16 +32,22 @@
 .products-additional__wrapper-container {
   @media (min-width: $table-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 25px 0;
     border-top: 1px solid $border;
+    margin: 0 38px;
+
+
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 895px;
+    min-width: 895px;
+    padding: 15px 0;
   }
 }
+
 
 .products-additional__title {
   @include font-text($oswald, 24px, 24px, 400);
@@ -64,8 +73,12 @@
 
   @media (min-width: $table-width) {
     @include font-text($arial, 16px, 16px, 500);
-    max-width: 290px;
-    margin: 0;
+    min-width: 290px;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
   }
 }
 
@@ -89,6 +102,10 @@
   @media (min-width: $table-width) {
     margin-top: 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .products-additional__table tr {
@@ -96,16 +113,14 @@
   justify-content: space-between;
   min-width: 280px;
 
+  @media (min-width: $desktop-width) {
+    align-items: center;
+    min-width: 285px;
+  }
 }
 
 .products-additional__table {
   @media (min-width: $table-width) {
     align-items: center;
-  }
-}
-
-.products-additional__link {
-  @media (min-width: $table-width) {
-    margin-bottom: 25px;
   }
 }

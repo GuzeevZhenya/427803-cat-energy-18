@@ -16,10 +16,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 290px;
     width: 245px;
-    align-items: flex-end;
-    padding-right: 125px;
+    height: 290px;
+    padding-right: 0;
+
   }
 }
 
@@ -33,5 +33,10 @@
   @media (min-width: $table-width) {
     max-width: 150px;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    text-align: center;
   }
 }

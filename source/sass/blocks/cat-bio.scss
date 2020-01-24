@@ -14,6 +14,11 @@
   width: 100%;
   padding-left: 15px;
   margin-left: 17px;
+
+  @media (min-width: $desktop-width) {
+   min-height: 50px;
+   width: 475px;
+  }
 }
 
 .cat-bio__wrapper {
@@ -22,5 +27,11 @@
   @media (min-width: $table-width) {
     margin-right: 35px;
     margin-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+   min-width: 570px;
+   margin: 0;
+
   }
 }

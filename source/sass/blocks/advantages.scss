@@ -29,8 +29,6 @@
     flex-wrap: wrap;
     padding: 0;
   }
-
-
 }
 
 .advantages__wrapper {
@@ -50,8 +48,8 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding-top: 80px;
-    padding-bottom: 192px;
+    margin-top: 80px;
+    margin-bottom: 75px;
   }
 }
 
@@ -70,14 +68,14 @@
     @include font-text($arial, 16px, 24px, 400);
     padding: 0;
     margin: 0;
-    padding-top: 120px;
+    padding-top: 110px;
     margin-bottom: 140px;
     max-width: 354px;
     padding-right: 100px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 25%;
+    max-width: 245px;
     margin-bottom: 265px;
     padding-right: 0;
   }
@@ -117,6 +115,11 @@
   @media (min-width: $table-width) {
     top: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 80px;
+    height: 80px;
+  }
 }
 
 .advantages__item--natural::before {
@@ -127,13 +130,18 @@
   background-image: url("../img/advantage-leaf@1x.png");
   background-repeat: no-repeat;
   background-position: center;
-  width: 26px;
-  height: 29px;
+  width: 27px;
+  height: 30px;
   top: 15px;
   left: 17px;
 
   @media (min-width: $table-width) {
     top: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 25px;
+    left: 26px;
   }
 }
 
@@ -153,6 +161,11 @@
   @media (min-width: $table-width) {
     top: 15px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 25px;
+    left: 24px;
+  }
 }
 
 .advantages__item--food-substitute::before {
@@ -171,6 +184,11 @@
   @media (min-width: $table-width) {
     top: 15px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 25px;
+    left: 26px;
+  }
 }
 
 .advantages__item--wight::before {
@@ -188,5 +206,10 @@
 
   @media (min-width: $table-width) {
     top: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 25px;
+    left: 26px;
   }
 }

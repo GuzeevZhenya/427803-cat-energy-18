@@ -25,11 +25,11 @@
     </div>
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a href="#">Главная</a>
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--active" href="#">Главная</a>
         </li>
         <li class="site-list__item ">
-          <a href="catalog.html">Каталог продукции</a>
+          <a class="site-list__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="site-list__item">
           <a href="form.html">Подбор программы</a>
@@ -113,7 +113,7 @@
           Живой пример
         </h2>
         <div class="example__blocks">
-          <div  class="example__block-info">
+          <div class="example__block-info">
             <p class="example__text">
               Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
               на Cat Energy Slim. Отличный результат без изнуряющих
@@ -135,15 +135,15 @@
                 Затраты на питание:<span>15 000руб</span>
               </p>
             </div>
-          </div >
+          </div>
           <div class="example__slider slider">
             <img class="slider__photo-before" src="img/before-desktop@1x.png" alt="Кот до" />
           </div>
-        </div>
 
 
-        <!--Решить название-->
-        <!--
+
+          <!--Решить название-->
+          <!--
           <div class="product-promotion__img-toggle-block">
             <button type="button" name="cat-before" class="product-promotion__toggle">Было</button>
             <div class="product-promotion__slider-bar">
@@ -153,7 +153,7 @@
             <button type="button" name="cat-after" class="product-promotion__toggle">Стало</button>
           </div>
           -->
-
+        </div>
       </div>
     </section>
   </main>
@@ -191,10 +191,9 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#" aria-label="Страница «Кэт энерджи» в Фейсбуке">
-            <svg xmlns="http://www.w3.org/2000/svg" class="social__image social__image--facebook" width="10"
-              height="19">
-              <use xlink:href="img/sprite.svg#sprite-icon-fb"></use>
+          <a class="social__link social__link--facebook" href="https://fb.com">
+            <svg class="social__icon" width="10" height="19">
+              <use xlink:href="img/sprite.svg#icon-fb"></use>
             </svg>
           </a>
         </li>

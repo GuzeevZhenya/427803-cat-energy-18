@@ -1,4 +1,13 @@
+.cat{
+  @media (min-width: $desktop-width) {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  }
+}
 .form__required {
   @include font-text($oswald, 14px, 16px, 400);
   color: $text;
 }
+
+

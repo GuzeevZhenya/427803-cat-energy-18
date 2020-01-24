@@ -1,16 +1,52 @@
 .cat-additional {
 
-  & label {
+  label {
     @include font-text($oswald, 16px, 18px, 400);
     margin-bottom: 25px;
     display: flex;
     align-items: center;
     width: 100%;
+    position: relative;
+
+    @media (min-width: $table-width) {
+      width: 225px;
+      margin-bottom: 32px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      background-color: #ffffff;
+      width: 30px;
+      height: 30px;
+      border: 1px solid $border;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      background-color: transparent;
+      background-image: url("../img/icon-tick.svg");
+      background-repeat: no-repeat;
+      width: 21px;
+      height: 16px;
+      left: 5px;
+      top: 6px;
+    }
   }
 }
 
+
+
+
 .cat-additional__wrapper {
   @include wrapper;
+
+  @media (min-width: $table-width) {
+    padding: 0 70px;
+  }
 }
 
 
@@ -19,7 +55,7 @@
   flex-direction: column;
 
   @media (min-width: $table-width) {
-    width: 100%;
+    width: 545px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;

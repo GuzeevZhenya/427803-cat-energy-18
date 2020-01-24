@@ -7,7 +7,6 @@
 
   @media (min-width: $table-width) {
     flex-direction: row;
-
     background-color: #ffffff;
     flex-wrap: wrap;
     border: none;
@@ -50,10 +49,13 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
   padding-bottom: 24px;
+
 
   @media (min-width: $table-width) {
     background-color: $bgc;
+    padding:0 38px;
     width: 324px;
     margin-top: 140px;
     border: none;
@@ -74,8 +76,21 @@
   }
 }
 
+
 .products__item:nth-child(4n+4) {
   margin-right: 0;
+}
+
+.products__item:nth-child(2n+1) {
+  @media (min-width: $table-width) {
+    margin-right: 60px;
+  }
+}
+
+.products__item:nth-child(-n+2) {
+  @media (min-width: $table-width) {
+    margin-top: 0;
+  }
 }
 
 
@@ -89,7 +104,6 @@
     width: 100%;
     justify-content: space-between;
     flex: none;
-    padding: 0 37px;
   }
 }
 

@@ -11,14 +11,14 @@
   text-transform: uppercase;
   border-bottom: 1px solid $border;
   border-top: 1px solid $border;
-  margin-bottom: 24px;
-  margin-top: 24px;
+ // margin-bottom: 24px;
+ // margin-top: 24px;
 
   @media (min-width: $table-width) {
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 188px;
+   // margin-bottom: 188px;
   }
 }
