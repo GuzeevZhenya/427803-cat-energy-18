@@ -3,6 +3,7 @@
   padding-bottom: 17px;
   width: 320px;
   position: relative;
+  align-items: center;
 
 
   @media (min-width: $table-width) {
@@ -15,6 +16,8 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
+    padding: 0 70px;
+    padding-top: 52px;
   }
 }
 

@@ -17,7 +17,10 @@
   @media (min-width: $table-width) {
     @include font-text($oswald, 60px, 60px, 400);
     margin-top: 65px;
-    margin-bottom: 75px;
+  }
+
+  @media (min-width: $table-width) {
+    margin-bottom: 60px;
   }
 }
 

@@ -80,8 +80,6 @@
     padding-right: 0;
   }
 
-
-
   &:nth-last-of-type(1) {
     @media (min-width: $table-width) {
       margin-bottom: 105px;
@@ -103,6 +101,7 @@
   }
 }
 
+/*
 .advantages__item::after {
   position: absolute;
   content: "";
@@ -121,19 +120,58 @@
     height: 80px;
   }
 }
+*/
+.advantages__item::after {
+  @media (min-width: $table-width) {
+    content: "1";
+    position: absolute;
+    display: block;
+    font-size: 228px;
+    left: 126px;
+    display: block;
+    z-index: -2;
+    color: $bgc;
+  }
+}
 
-.advantages__item--natural::before {
+.advantages__item--powder::after {
+  @media (min-width: $table-width) {
+    content: "2";
+
+  }
+}
+
+.advantages__item--food-substitute::after {
+  @media (min-width: $table-width) {
+    content: "3";
+  }
+}
+
+.advantages__item--wight::after {
+  @media (min-width: $table-width) {
+    content: "4";
+
+  }
+}
+
+.advantages__item::before {
   position: absolute;
   display: block;
   z-index: 1;
   content: "";
+  width: 60px;
+  background-color: $green;
+  height: 60px;
+}
+
+.advantages__item--natural::before {
   background-image: url("../img/advantage-leaf@1x.png");
   background-repeat: no-repeat;
   background-position: center;
-  width: 27px;
-  height: 30px;
-  top: 15px;
-  left: 17px;
+  top: 0;
+  left: 0;
+  background-size: 27px 30px;
+
 
   @media (min-width: $table-width) {
     top: 15px;
@@ -146,17 +184,12 @@
 }
 
 .advantages__item--powder::before {
-  position: absolute;
-  display: block;
-  z-index: 1;
-  content: "";
   background-image: url("../img/advantage-powder@1x.png");
   background-repeat: no-repeat;
   background-position: center;
-  width: 29px;
-  height: 32px;
-  top: 14px;
-  left: 15px;
+  top: 0;
+  left: 0;
+  background-size: 27px 30px;
 
   @media (min-width: $table-width) {
     top: 15px;
@@ -169,17 +202,12 @@
 }
 
 .advantages__item--food-substitute::before {
-  position: absolute;
-  display: block;
-  z-index: 1;
-  content: "";
   background-image: url("../img/advantage-dining@1x.png");
   background-repeat: no-repeat;
   background-position: center;
-  width: 24px;
-  height: 32px;
-  top: 14px;
-  left: 18px;
+  top: 0;
+  left: 0;
+  background-size: 27px 30px;
 
   @media (min-width: $table-width) {
     top: 15px;
@@ -192,17 +220,12 @@
 }
 
 .advantages__item--wight::before {
-  position: absolute;
-  display: block;
-  z-index: 1;
-  content: "";
   background-image: url("../../img/advantage-clock@1x.png");
   background-repeat: no-repeat;
   background-position: center;
-  width: 26px;
-  height: 29px;
-  top: 15px;
-  left: 17px;
+  top: 0;
+  left: 0;
+  background-size: 27px 30px;
 
   @media (min-width: $table-width) {
     top: 15px;

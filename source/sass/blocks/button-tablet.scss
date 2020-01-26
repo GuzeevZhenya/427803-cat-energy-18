@@ -4,8 +4,12 @@
      position: absolute;
      max-width: 245px;
      max-height: 50px;
-     top: 307px;
+     top: 298px;
      left: 122px;
      padding: 15px 26px;
+   }
+
+   @media (min-width: $desktop-width) {
+    position: inherit;
    }
  }

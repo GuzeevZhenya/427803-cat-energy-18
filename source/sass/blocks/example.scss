@@ -2,6 +2,10 @@
   background-color: $bgc;
   padding-top: 33px;
   padding-bottom: 39px;
+
+  @media (min-width: $table-width) {
+    background-color: #ffffff;
+  }
 }
 
 .example__blocks {
@@ -11,6 +15,14 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
   }
+}
+
+.example-big__wrapper {
+
+  @media (min-width: $table-width) {
+    background-color: #ffffff;
+  }
+
 }
 
 .example__wrapper {

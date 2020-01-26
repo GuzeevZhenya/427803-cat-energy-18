@@ -13,6 +13,8 @@
 
 .cat-comments__title {
   @include font-text($oswald, 24px, 24px, 400);
+  margin-top: 11px;
+  margin-bottom: 35px;
 }
 
 .cot-comments__textarea {
@@ -21,4 +23,8 @@
   width: 280px;
   min-height: 150px;
   padding: 13px;
+
+  @media (min-width: $table-width) {
+    width: 100%;
+  }
 }

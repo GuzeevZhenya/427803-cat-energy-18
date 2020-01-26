@@ -1,11 +1,12 @@
 .products {
   @include list-reset;
-  @include wrapper;
+  // @include wrapper;
   display: flex;
   flex-direction: column;
   border-top: 1px solid $border;
 
   @media (min-width: $table-width) {
+    @include wrapper;
     flex-direction: row;
     background-color: #ffffff;
     flex-wrap: wrap;
@@ -49,13 +50,14 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
+  border-bottom: 1px solid $border;
+  padding: 0 20px;
   padding-bottom: 24px;
 
 
   @media (min-width: $table-width) {
     background-color: $bgc;
-    padding:0 38px;
+    padding: 0 38px 40px;
     width: 324px;
     margin-top: 140px;
     border: none;
@@ -85,14 +87,25 @@
   @media (min-width: $table-width) {
     margin-right: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 80px;
+  }
 }
 
 .products__item:nth-child(-n+2) {
   @media (min-width: $table-width) {
-    margin-top: 0;
+    //margin-right: 80px;
+    margin-top: 100px;
   }
 }
 
+.products__item:nth-child(n+5) {
+  @media (min-width: $table-width) {
+    margin-bottom: 0;
+  }
+
+}
 
 .products__item-wrapper {
   display: flex;

@@ -18,6 +18,11 @@
 
 .cat-contacts__title {
   @include font-text($oswald, 24px, 24px, 400);
+
+  @media (min-width: $table-width) {
+    margin: 0;
+    padding-bottom: 75px;
+  }
 }
 
 .cat-contacts__container {

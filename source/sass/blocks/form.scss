@@ -1,13 +1,28 @@
-.cat{
+.cat {
   @media (min-width: $desktop-width) {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
+
 .form__required {
   @include font-text($oswald, 14px, 16px, 400);
   color: $text;
+  width: 192px;
+  padding-top: 24px;
+
+  @media (min-width: $table-width) {
+    @include font-text($oswald, 16px, 16px, 400);
+    padding: 0;
+  }
 }
 
+.form__button {
 
+  @media (min-width: $table-width) {
+    max-width: 285px;
+    padding-bottom: 72px;
+  }
+
+}

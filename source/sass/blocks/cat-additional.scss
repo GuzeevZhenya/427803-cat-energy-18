@@ -9,6 +9,7 @@
     position: relative;
 
     @media (min-width: $table-width) {
+      @include font-text($oswald, 20px, 20px, 400);
       width: 225px;
       margin-bottom: 32px;
     }
@@ -38,14 +39,25 @@
   }
 }
 
-
-
-
 .cat-additional__wrapper {
   @include wrapper;
+  padding-bottom: 35px;
 
   @media (min-width: $table-width) {
     padding: 0 70px;
+  }
+}
+
+.cat-additional__send {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $table-width) {
+    flex-direction: row;
+    max-width: 535px;
+    justify-content: space-between;
+    padding-bottom: 72px;
   }
 }
 
@@ -55,7 +67,7 @@
   flex-direction: column;
 
   @media (min-width: $table-width) {
-    width: 545px;
+    max-width: 535px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;

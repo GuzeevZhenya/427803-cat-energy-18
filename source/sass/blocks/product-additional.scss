@@ -1,11 +1,9 @@
 .products-additional {
-  border-top: 1px solid $border;
   overflow: hidden;
 
 }
 
 .products-additional__wrapper {
-  min-width: 708px;
   @include wrapper;
   display: flex;
   flex-direction: column;
@@ -15,6 +13,7 @@
   @media (min-width: $table-width) {
     display: flex;
     flex-direction: column;
+    min-width: 708px;
 
   }
 
@@ -30,7 +29,11 @@
 }
 
 .products-additional__wrapper-container {
+  padding-bottom: 17px;
+  border-bottom: 1px solid $price;
+
   @media (min-width: $table-width) {
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -38,13 +41,11 @@
     padding: 25px 0;
     border-top: 1px solid $border;
     margin: 0 38px;
-
-
   }
 
   @media (min-width: $desktop-width) {
     min-width: 895px;
-    padding: 15px 0;
+    padding: 12px 0;
   }
 }
 
@@ -54,13 +55,15 @@
   margin: 0;
   padding: 30px 0;
   position: relative;
+  border-bottom: 1px solid $price;
 
 
   @media (min-width: $table-width) {
     @include font-text($oswald, 36px, 36px, 400);
-    padding-top: 70px;
+    margin-top: 80px;
     padding-bottom: 75px;
-
+    padding-left: 38px;
+    border: none;
   }
 }
 
@@ -98,6 +101,7 @@
 
 .products-additional__gift {
   margin-top: 39px;
+  margin-bottom: 35px;
 
   @media (min-width: $table-width) {
     margin-top: 70px;
