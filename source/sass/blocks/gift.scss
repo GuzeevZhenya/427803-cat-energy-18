@@ -23,6 +23,15 @@
   }
 }
 
+.gift__image {
+  margin: 0 auto;
+  display: inline-block;
+
+  @media (min-width: $table-width) {}
+
+  @media (min-width: $desktop-width) {}
+}
+
 .gift__text {
   @include font-text($arial, 16px, 20px, 400);
   margin-top: auto;

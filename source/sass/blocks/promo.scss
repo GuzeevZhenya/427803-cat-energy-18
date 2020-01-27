@@ -20,6 +20,7 @@
 
   @media (min-width: $table-width) {
     padding-left: 90px;
+    padding-bottom: 530px;
   }
 
 
@@ -45,10 +46,19 @@
 }
 
 .promo__image {
+  @media (min-width: $table-width) {
+    position: absolute;
+    left: 120px;
+    top: 270px;
+    z-index: -3;
+    width: 550px;
+    height: 500px;
+  }
   @media (min-width: $desktop-width) {
     position: absolute;
     top: -100px;
     z-index: -3;
+   
   }
 }
 
@@ -94,6 +104,7 @@
     color: $black;
     max-width: 295px;
     text-align: left;
+    padding-bottom: 50px;
     // padding-bottom: 54px;
   }
 

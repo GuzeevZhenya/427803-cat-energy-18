@@ -5,6 +5,7 @@
 
   @media (min-width: $table-width) {
     background-color: #ffffff;
+    padding-bottom: 0;
   }
 }
 
@@ -12,12 +13,33 @@
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $table-width) {}
+
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    background-color: $bgc;
+    margin-top: 76px;
+  }
+}
+
+.example__block-info {
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $table-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    margin: 0;
+    padding-left: 40px;
   }
 }
 
 .example-big__wrapper {
+
+  margin: 0 auto;
 
   @media (min-width: $table-width) {
     background-color: #ffffff;
@@ -26,7 +48,6 @@
 }
 
 .example__wrapper {
-  @include wrapper;
 
   @media (min-width: $desktop-width) {
     margin-top: -168px;
@@ -35,14 +56,19 @@
 
 .example__title {
   @include font-text($oswald, 36px, 60px, 500);
-
+  padding: 0 20px;
   margin: 0;
+  text-align: center;
 
   @media (min-width: $table-width) {
     @include font-text($oswald, 60px, 60px, 400);
+    padding: 0 30px;
+    text-align: left;
   }
 
-  @media (min-width: $desktop-width) {}
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+  }
 }
 
 .example__text {
@@ -59,7 +85,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 154px;
+    padding-top: 76px;
     max-width: 435px;
   }
 }
