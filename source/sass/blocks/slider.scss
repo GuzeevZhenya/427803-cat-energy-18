@@ -7,7 +7,7 @@
 }
 
 .product-promotion__img-toggle-block {
- @include font-text($oswald, 16px, 20px, 400);
+  @include font-text($oswald, 16px, 20px, 400);
   margin: 0;
   width: 100%;
   display: flex;
