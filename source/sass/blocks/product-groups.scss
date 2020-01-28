@@ -44,9 +44,9 @@
     top: 10px;
 
     @media (min-width: $table-width) {
-      right: 80px;
+      right: 95px;
       left: auto;
-      top: 52px;
+      top: 45px;
       width: 140px;
       height: 194px;
       background-image: url("../img/icon-cat-slim.svg");
@@ -99,7 +99,7 @@
     @media (min-width: $table-width) {
       width: 256px;
       height: 107px;
-      left: 400px;
+      left: 410px;
       top: 92px;
     }
 
@@ -153,7 +153,7 @@
 
   @media (min-width: $table-width) {
     @include font-text($arial, 16px, 24px, 400);
-    max-width: 350px;
+    max-width: 375px;
     border: none;
   }
 

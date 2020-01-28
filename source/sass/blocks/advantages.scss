@@ -126,11 +126,11 @@
     content: "1";
     position: absolute;
     display: block;
-    font-size: 281px;
-    line-height: 281px;
+    @include font-text($oswald, 281px, 281px, 400);
     width: 120px;
-    height: 128px;
-    left: 126px;
+    height: 120px;
+    left: 120px;
+    top: -40px;
     display: block;
     z-index: -2;
     color: $bgc;
@@ -140,7 +140,8 @@
 .advantages__item--powder::after {
   @media (min-width: $table-width) {
     content: "2";
-    top: 0;
+    top: -40px;
+
 
   }
 }
@@ -177,13 +178,11 @@
   background-size: 40px 40px;
 
 
-  @media (min-width: $table-width) {
-    top: 15px;
-  }
+  @media (min-width: $table-width) {}
 
   @media (min-width: $desktop-width) {
     top: 25px;
-    left: 26px;
+    left: 0;
   }
 }
 
@@ -193,15 +192,13 @@
   background-position: center;
   top: 0;
   left: 0;
-  background-size: 27px 30px;
+  background-size: 40px 40px;
 
-  @media (min-width: $table-width) {
-    top: 15px;
-  }
+  @media (min-width: $table-width) {}
 
   @media (min-width: $desktop-width) {
     top: 25px;
-    left: 24px;
+    left: 0;
   }
 }
 
@@ -211,15 +208,13 @@
   background-position: center;
   top: 0;
   left: 0;
-  background-size: 27px 30px;
+  background-size: 40px 40px;
 
-  @media (min-width: $table-width) {
-    top: 15px;
-  }
+  @media (min-width: $table-width) {}
 
   @media (min-width: $desktop-width) {
     top: 25px;
-    left: 26px;
+    left: 0;
   }
 }
 
@@ -229,14 +224,12 @@
   background-position: center;
   top: 0;
   left: 0;
-  background-size: 27px 30px;
+  background-size: 40px 40px;
 
-  @media (min-width: $table-width) {
-    top: 15px;
-  }
+  @media (min-width: $table-width) {}
 
   @media (min-width: $desktop-width) {
     top: 25px;
-    left: 26px;
+    left: 0;
   }
 }

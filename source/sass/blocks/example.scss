@@ -1,7 +1,9 @@
 .example {
   background-color: $bgc;
   padding-top: 33px;
-  padding-bottom: 39px;
+  margin: 0 auto;
+
+ // padding-bottom: 39px;
 
   @media (min-width: $table-width) {
     background-color: #ffffff;
@@ -23,10 +25,12 @@
 }
 
 .example__block-info {
+  width: 320px;
   padding: 0 20px;
   margin: 0 auto;
 
   @media (min-width: $table-width) {
+   width: 768px;
     padding: 0 30px;
   }
 
@@ -34,6 +38,7 @@
     flex-direction: row;
     margin: 0;
     padding-left: 40px;
+
   }
 }
 
@@ -54,27 +59,30 @@
   }
 }
 
+
 .example__title {
   @include font-text($oswald, 36px, 60px, 500);
   padding: 0 20px;
-  margin: 0;
-  text-align: center;
+  max-width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $table-width) {
     @include font-text($oswald, 60px, 60px, 400);
     padding: 0 30px;
     text-align: left;
+    max-width: 758px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 40px;
+    max-width: 1300px;
   }
 }
 
 .example__text {
   @include font-text($arial, 14px, 18px, 400);
-  margin: 0;
   color: $text;
+  margin: 0;
   padding-top: 34px;
   padding-bottom: 27px;
   width: 270px;
@@ -87,5 +95,103 @@
   @media (min-width: $desktop-width) {
     padding-top: 76px;
     max-width: 435px;
+  }
+}
+
+
+
+
+
+//Леввая херня про кота
+.product-promotion__example-images {
+
+  align-self: center;
+
+  @media (min-width: $table-width) {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 650px;
+    align-self: stretch;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.product-promotion__image-block {
+  margin-bottom: 33px;
+
+  &--after {
+    display: none;
+  }
+
+  @media (min-width: $table-width) {
+    display: flex;
+    //Сделано так, из-за странной работы justify-content в ie11
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    margin-bottom: 0;
+    padding-bottom: 104px;
+    background-image: linear-gradient(to bottom, $main-bg-color 26.5%, $blocks-bg-color 26.5%);
+    overflow: hidden;
+
+    &--after {
+      align-items: flex-start;
+      background-image: linear-gradient(to bottom, $main-bg-color 26.5%, $blocks-bg-color-add 26.5%);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-top: -190px;
+    justify-content: flex-end;
+    padding-bottom: 127px;
+
+    &--before {
+      background-image: none;
+    }
+
+    &--after {
+      background-image: linear-gradient(to bottom, transparent 190px, $blocks-bg-color-add 190px);
+    }
+  }
+
+}
+
+.product-promotion__img {
+  width: 311px;
+  height: 232px;
+
+  @media (min-width: $table-width) {
+    flex-shrink: 0;
+    width: 636px;
+    min-width: 636px;
+    height: 517px;
+
+    &--before {
+      transform: translate(50%);
+    }
+
+    &--after {
+      left: 0;
+      transform: translate(-50%);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--before {
+      transform: translate(47%);
+    }
+
+    &--after {
+      transform: translate(-52.5%);
+    }
   }
 }

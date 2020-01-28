@@ -10,19 +10,18 @@
 }
 
 .site-list__item {
-  @include font-text($oswald, 20px, 20px, 400);
+  @include font-text($oswald, 20px, 20px, 500);
   padding: 24px 0;
   text-align: center;
   border-top: 1px solid $border;
+  text-transform: uppercase;
 
   a {
     position: relative;
     color: $black;
     text-decoration: none;
 
-    @media (min-width: $desktop-width) {
-      color: #ffffff;
-    }
+
   }
 
   @media (min-width: $table-width) {
@@ -30,11 +29,7 @@
     border: none;
   }
 
-  @media (min-width: $desktop-width) {
-    color: #ffffff;
-    padding: 0;
 
-  }
 
 }
 
@@ -44,6 +39,25 @@
     width: 100%;
     height: 2px;
     background-color: $green;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+  }
+
+}
+
+.site-list--white a {
+  @media (min-width: $table-width) {
+    color: white;
+  }
+}
+
+.site-list__link--active-white::after {
+  @media (min-width: $desktop-width) {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: white;
     position: absolute;
     bottom: -12px;
     left: 0;

@@ -1,6 +1,7 @@
 .results {
   margin-bottom: 25px;
 
+
   @media (min-width: $table-width) {
     display: flex;
     align-items: center;
@@ -61,12 +62,17 @@
   background-color: $bgc;
   width: 87px;
 
+
   @media (min-width: $table-width) {
     @include font-text($arial, 14px, 14px, 400);
     width: 143px;
     left: 9px;
     top: 63px;
     background-color: #ffffff;
+  }
+  @media (min-width: $table-width) {
+    background-color: $bgc;
+
   }
 }
 

@@ -1,44 +1,76 @@
-.cat-additional {
-
-  label {
-    @include font-text($oswald, 16px, 18px, 400);
-    margin-bottom: 25px;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    position: relative;
-
-    @media (min-width: $table-width) {
-      @include font-text($oswald, 20px, 20px, 400);
-      width: 225px;
-      margin-bottom: 32px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      z-index: 1;
-      background-color: #ffffff;
-      width: 30px;
-      height: 30px;
-      border: 1px solid $border;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      z-index: 1;
-      background-color: transparent;
-      background-image: url("../img/icon-tick.svg");
-      background-repeat: no-repeat;
-      width: 21px;
-      height: 16px;
-      left: 5px;
-      top: 6px;
-    }
-  }
+.cat-additional__label {
+  @include font-text($oswald, 16px, 18px, 400);
+  position: relative;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 47px;
 }
 
+
+.cat-additional__input {
+  position: absolute;
+  appearance: none;
+  left: 20px;
+  z-index: 1;
+}
+
+.cat-additional__checkbox {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: tomato;
+  background-image: url("../img/icon-cat-slim.svg");
+  border: 1px solid $checkbox;
+  left: 0;
+}
+
+.cat-additional__input:checked+.cat-additional__checkbox {
+  background-image: url("../img/icon-cat-pro.svg");
+}
+
+.cat-additional__input:active+.cat-additional__checkbox {
+  background-image: url("../img/icon-cat-slim.svg");
+}
+
+/*
+@media (min-width: $table-width) {
+  @include font-text($oswald, 20px, 20px, 400);
+  width: 225px;
+  margin-bottom: 32px;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background-color: #ffffff;
+    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $border;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+
+    width: 21px;
+    height: 16px;
+    left: 5px;
+    top: 6px;
+  }
+}
+}
+
+/*
+  .cat-additional__label:checked+.cat-additional__input::after {
+    content: "";
+  }
+*/
 .cat-additional__wrapper {
   @include wrapper;
   padding-bottom: 35px;
@@ -63,6 +95,7 @@
 
 
 .cat-additional__container {
+
   display: flex;
   flex-direction: column;
 

@@ -3,10 +3,17 @@
   padding: 0 20px;
   border-top: 1px solid $form-border;
   border-bottom: 1px solid $form-border;
+  margin: 0 auto;
+  max-width: 320px;
 
   @media (min-width: $table-width) {
     border: none;
     padding: 72px 60px;
+    max-width: 768px;
+  }
+
+  @media (min-width: $table-width) {
+    max-width: 1300px;
   }
 
 
