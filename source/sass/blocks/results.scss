@@ -15,7 +15,7 @@
   }
 }
 
-.results__cat{
+.results__cat {
   margin: 0 auto;
 }
 
@@ -62,7 +62,6 @@
   background-color: $bgc;
   width: 87px;
 
-
   @media (min-width: $table-width) {
     @include font-text($arial, 14px, 14px, 400);
     width: 143px;
@@ -70,9 +69,9 @@
     top: 63px;
     background-color: #ffffff;
   }
-  @media (min-width: $table-width) {
-    background-color: $bgc;
 
+  @media (min-width: $desktop-width) {
+    background-color: $bgc;
   }
 }
 

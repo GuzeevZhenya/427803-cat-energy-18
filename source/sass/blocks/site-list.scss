@@ -40,14 +40,14 @@
     height: 2px;
     background-color: $green;
     position: absolute;
-    bottom: -12px;
+    bottom: -5px;
     left: 0;
   }
 
 }
 
 .site-list--white a {
-  @media (min-width: $table-width) {
+  @media (min-width: $desktop-width) {
     color: white;
   }
 }
@@ -59,7 +59,7 @@
     height: 2px;
     background-color: white;
     position: absolute;
-    bottom: -12px;
+    bottom: -10px;
     left: 0;
   }
 }

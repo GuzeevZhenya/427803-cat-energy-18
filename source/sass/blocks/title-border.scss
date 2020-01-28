@@ -4,6 +4,10 @@
   width: 100%;
   height: 3px;
   background-color: $green;
-  top: 50%;
-  right: -250px;
+  top: 10.5%;
+
+  @media (min-width: $table-width) {
+    right: 0;
+    top: 11%;
+  }
 }

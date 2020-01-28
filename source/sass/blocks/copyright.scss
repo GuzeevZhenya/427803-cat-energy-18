@@ -1,5 +1,5 @@
 .copyright {
-
+  @include font-text($arial, 16px, 16px, 400);
   padding: 17px 0;
   text-decoration: none;
   display: flex;
@@ -7,7 +7,6 @@
   justify-content: space-between;
   align-items: center;
 
-  // @include font-content(16px, 16px);
   color: $icon-color;
 
   &:hover .copyright__logo,
@@ -18,6 +17,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $table-width) {
+    width: 162px;
   }
 }
 
@@ -46,4 +49,5 @@
 .copyright__link {
   text-decoration: none;
   color: $text;
+  padding-right: 20px;
 }

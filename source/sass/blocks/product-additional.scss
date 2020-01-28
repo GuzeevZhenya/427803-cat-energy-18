@@ -1,6 +1,11 @@
 .products-additional {
   overflow: hidden;
+  position: relative;
 
+  @media (min-width: $table-width) {
+
+    width: 100%;
+  }
 }
 
 .products-additional__wrapper {
@@ -26,6 +31,10 @@
 .products-additional__list {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+  }
 }
 
 .products-additional__wrapper-container {
@@ -56,14 +65,15 @@
   padding: 30px 0;
   position: relative;
   border-bottom: 1px solid $price;
-
+  background-color: #ffffff;
 
   @media (min-width: $table-width) {
     @include font-text($oswald, 36px, 36px, 400);
     margin-top: 80px;
-    padding-bottom: 75px;
+    padding-bottom: 80px;
     padding-left: 38px;
     border: none;
+    min-width: 411px;
   }
 }
 
@@ -72,12 +82,11 @@
   margin: 0;
   text-transform: uppercase;
   padding-top: 14px;
-  padding-bottom: 16px;
+  padding-bottom: 12px;
 
   @media (min-width: $table-width) {
-    @include font-text($arial, 16px, 16px, 500);
+    @include font-text($oswald, 20px, 20px, 500);
     min-width: 290px;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -94,6 +103,7 @@
   margin-bottom: 17px;
 
   @media (min-width: $table-width) {
+    @include font-text($arial, 16px, 20px, 400);
     margin: 0;
 
   }
@@ -108,7 +118,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
+    margin:0;
   }
 }
 

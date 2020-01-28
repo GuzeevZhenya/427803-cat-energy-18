@@ -25,8 +25,8 @@
 
 
 .gift__text {
-  position: relative;
   @include font-text($arial, 16px, 20px, 400);
+  position: relative;
   margin-top: auto;
   max-width: 166px;
   text-align: center;
@@ -36,6 +36,7 @@
   @media (min-width: $table-width) {
     max-width: 150px;
     text-align: left;
+    margin-left: 335px;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,8 +51,13 @@
   background-image: url("../../img/icon-gift.svg");
   width: 55px;
   height: 60px;
-  background-color: red;
-  color: red;
   top: 0px;
   right: 50px;
+
+  @media (min-width: $table-width) {
+    left: 0;
+    right: 0;
+  }
+
+  @media (min-width: $table-width) {}
 }

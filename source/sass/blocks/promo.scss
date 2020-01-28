@@ -71,8 +71,14 @@
   text-align: center;
 }
 
-.promo__pickup{
+.promo__pickup {
   margin-top: -20px;
+
+  @media (min-width: $table-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {}
 }
 
 .promo__title {
@@ -112,11 +118,12 @@
     color: $black;
     max-width: 295px;
     text-align: left;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+    padding: 0;
     // padding-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 54px;
+    margin-bottom: 54px;
   }
 }
