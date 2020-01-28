@@ -1,57 +1,14 @@
 .cat-target {
-  //@include wrapper;
   padding: 0 20px;
-  border-top: 1px solid $form-border;
-  border-bottom: 1px solid $form-border;
   margin: 0 auto;
   max-width: 320px;
 
+
   @media (min-width: $table-width) {
-    border: none;
-    padding: 72px 67px 72px 70px;
     max-width: 768px;
-  }
-
-  @media (min-width: $table-width) {
-    max-width: 1300px;
-  }
-
-
-  & label {
-    @include font-text($oswald, 16px, 18px, 400);
-    margin-bottom: 13px;
-
-    @media (min-width: $table-width) {
-      text-transform: uppercase;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 35px;
-
-    }
+    padding: 58px 70px;
 
   }
 
-  & input {
-    margin-right: 16px;
-  }
-}
-
-.cat-target__wrapper {
-  //@include wrapper;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  padding: 20px 0;
-
-  @media (min-width: $table-width) {
-    border: 1px solid $border;
-    padding: 24px 0 24px 28px;
-
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: 570px;
-    margin: 0;
-  }
+  @media (min-width: $table-width) {}
 }

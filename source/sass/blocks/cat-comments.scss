@@ -1,6 +1,11 @@
 .cat-comments {
   position: relative;
   overflow: hidden;
+
+  @media (min-width: $table-width) {
+    margin-bottom: 69px;
+  }
+
 }
 
 .cat-comments__wrapper {
@@ -15,6 +20,13 @@
   @include font-text($oswald, 24px, 24px, 400);
   margin-top: 11px;
   margin-bottom: 35px;
+
+  @media (min-width: $table-width) {
+    @include font-text($oswald, 36px, 36px, 400);
+    background-color: #ffffff;
+    max-width: 260px;
+  }
+
 }
 
 .cot-comments__textarea {

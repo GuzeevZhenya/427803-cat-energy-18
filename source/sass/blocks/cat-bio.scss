@@ -5,6 +5,12 @@
   align-items: center;
   margin-bottom: 14px;
   text-transform: uppercase;
+
+  @media (min-width: $table-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {}
 }
 
 .cat-bio__input {
@@ -15,8 +21,13 @@
   padding-left: 15px;
   margin-left: 17px;
 
+  @media (min-width: $table-width) {
+    margin: 10px;
+    flex: 1;
+  }
+
   @media (min-width: $desktop-width) {
-    min-height: 50px;
+    max-height: 50px;
     width: 475px;
   }
 }

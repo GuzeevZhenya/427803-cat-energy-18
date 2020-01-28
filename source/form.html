@@ -56,13 +56,22 @@
           </div>
         </div>
         <div class="cat-target">
-          <div class="cat-target__wrapper">
-            <label for="slim"><input type="radio" name="selection" id="slim" value="Похудение"
-                checked />Похудение</label>
-            <label for="pro"><input type="radio" name="selection" id="pro" value="Набор массы" />Набор массы</label>
-            <label for="nothing"><input type="radio" name="selection" id="nothing" value="Не знаю(нужен совет)" />Не
-              знаю(нужен совет) </label>
-          </div>
+          <ul class="cat-target-radio select">
+            <li class="select__item select__item--radio">
+              <input class="select__check-in" type="radio" name="program" value="loss-weight" id="radio-1" checked
+                hidden>
+              <label class="select__label select__label--radio" for="radio-1" tabindex="0">похудение</label>
+            </li>
+            <li class="select__item select__item--radio">
+              <input class="select__check-in" type="radio" name="program" value="up-weight" id="radio-2" hidden>
+              <label class="select__label select__label--radio" for="radio-2" tabindex="0">набор массы</label>
+            </li>
+            <li class="select__item select__item--radio">
+              <input class="select__check-in" type="radio" name="program" value="no-idea" id="radio-3" hidden>
+              <label class="select__label select__label--radio" for="radio-3" tabindex="0">не знаю (нужен ваш
+                совет)</label>
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -71,10 +80,12 @@
           <h2 class="cat-contacts__title">
             Контактные данные (владельца кота)
           </h2>
+          <div class="cat-contacts__info">
           <label for="">E&#8209;mail* <input class="cat-contacts__input" id="cat__email" type="text" required
               placeholder="kuklachev@gmail.com"></label>
           <label for="">Телефон* <input class="cat-contacts__input" type="text" id="cat__telephon" required
               placeholder="8 (960) 900-60-90"></label>
+          </div>
         </div>
       </div>
       <div class="cat-comments title-border">
@@ -84,36 +95,39 @@
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </div>
+
+
       <div class="cat-additional">
         <div class="cat-additional__wrapper">
-          <h2 class="cat-additional__title">Дополнительно</h2>
+          <h2 class="cat-additional__title ">Дополнительно</h2>
           <div class="cat-additional__container">
-            <label class="cat-additional__label" for="">
-              <input class="cat-additional__input" id="cat__sweetener" type="checkbox" checked />
-              <span class="cat-additional__checkbox"></span>
-              Сахарозаменитель</label>
-            <label class="cat-additional__label" for="">
-              <input class="cat-additional__input" id="cat__water" type="checkbox" />
-              <span class="cat-additional__checkbox"></span>
-              Питьевая вода
-            </label>
-            <label class="cat-additional__label" for="">
-              <input class="cat-additional__input" id="cat__milk" type="checkbox" />
-              <span class="cat-additional__checkbox"></span>
-              Молоко</label>
-            <label class="cat-additional__label cat-additional__label" for="">
-              <input class="cat-additional__input" id="cat__vitamins" type="checkbox" />
-              <span class="cat-additional__checkbox"></span>
-              Витамины </label>
-          </div>
-          <div class="cat-additional__send">
-            <button class="form__button button button--sell" type="submit">
-              Отправить заявку
-            </button>
-            <small class="form__required">* — Обязательные поля</small>
+            <ul class="cat-additional-checkbox select select--none">
+              <li class="select__item select__item--checkbox">
+                <input class="select__check-in" type="checkbox" name="add-on" value="no-sugar" id="check-1" checked
+                  hidden>
+                <label class="select__label select__label--checkbox" for="check-1" tabindex="0">сахарозаменитель</label>
+              </li>
+              <li class="select__item select__item--checkbox">
+                <input class="select__check-in" type="checkbox" name="add-on" value="water" id="check-2" hidden>
+                <label class="select__label select__label--checkbox" for="check-2" tabindex="0">питьевая вода</label>
+              </li>
+              <li class="select__item select__item--checkbox">
+                <input class="select__check-in" type="checkbox" name="add-on" value="water" id="check-3" hidden>
+                <label class="select__label select__label--checkbox" for="check-3" tabindex="0">молоко</label>
+              </li>
+              <li class="select__item select__item--checkbox">
+                <input class="select__check-in" type="checkbox" name="add-on" value="vitamins" id="check-4" hidden>
+                <label class="select__label select__label--checkbox" for="check-4" tabindex="0">витамины</label>
+              </li>
+            </ul>
+            <div class="cat-additional__send">
+              <button class="form__button button button--sell" type="submit">
+                Отправить заявку
+              </button>
+              <small class="form__required">* — Обязательные поля</small>
+            </div>
           </div>
         </div>
-      </div>
     </form>
   </main>
 
