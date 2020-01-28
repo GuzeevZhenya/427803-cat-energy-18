@@ -19,7 +19,7 @@
 .social__link {
   display: flex;
   text-decoration: none;
- // color: $icon-color;
+  color: $icon-color;
 
   &--vk {
     width: 21px;
@@ -39,7 +39,7 @@
   &:hover,
   &:focus,
   &:active {
-   // color: $icon-active-color;
+    color: $icon-active-color;
   }
 
   &:active {
@@ -53,7 +53,7 @@
   fill: currentColor;
 }
 
-@media (min-width: $table-width) {
+@media (min-width: $tablet-width) {
   .social {
     padding: 22px 0 11px 39px;
     border: none;

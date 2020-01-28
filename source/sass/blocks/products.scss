@@ -53,6 +53,7 @@
   border-bottom: 1px solid $border;
   padding: 0 20px;
   padding-bottom: 24px;
+  margin: 0 auto;
 
 
   @media (min-width: $table-width) {
@@ -71,16 +72,28 @@
     margin-bottom: 142px;
   }
 
-  img {
-    @media (min-width: $table-width) {
-      margin: 0 auto;
-    }
+}
+
+.products__image {
+
+  @media (min-width: $table-width) {
+   position: absolute;
+  }
+}
+
+.products__image--big {
+
+  @media (min-width: $table-width) {
+    width: 195px;
+    height: 208px;
   }
 }
 
 
 .products__item:nth-child(4n+4) {
-  margin-right: 0;
+  @media (min-width: $table-width) {
+    margin-right: 0;
+  }
 }
 
 .products__item:nth-child(2n+1) {

@@ -5,15 +5,58 @@ $text: #444444;
 $border: #d9d9d9;
 $price: #cdcdcd;
 $form-border: #ededed;
+$checkbox: #cfcfcf;
 
+
+$border-input-color: #cdcdcd;
 $banner-bg-color: #5eaa2f;
 $border-hover-color: #bababa;
-$border-input-color: #cdcdcd;
+$toogle-color: #dcdcdc;
+$main-bg-color: white;
 $button-bg-color: #68b738;
 
 
-$oswald: "Oswald", "Verdana", sans-serif;
-$arial: "Arial", sans-serif;
+
+
+
+$mobile-width: 320px;
+$mobile-content-width: 87.5%;
+$mobile-padding: 6.25%;
+$tablet-width: 768px;
+$tablet-content-width: 92.19%;
+$tablet-padding: 3.9%;
+$desktop-width: 1300px;
+$desktop-content-width: 93.84%;
+$desktop-padding: 3.3%;
+$big-width: 1700px;
+$desktop-width-container: 1440px;
+$retina-dppx: 1.5dppx;
+
+$main-bg-color: white;
+$blocks-bg-color: #f2f2f2;
+$blocks-bg-color-add: #eaeaea;
+$banner-bg-color: #5eaa2f;
+$button-bg-color: #68b738;
+$image-bg-color: #65a93c;
+$map-bg-color: #f5f5dc;
+$txt-main-color: #444444;
+$txt-header-color: black;
+$txt-contr-color: white;
+$txt-form-color: #222222;
+$border-block-color: #ededed;
+$border-input-color: #cdcdcd;
+$border-hover-color: #bababa;
+$border-error-color: #ff8282;
+$toogle-color: #dcdcdc;
+$icon-color: #666666;
+$icon-active-color: $button-bg-color;
+
+
+$oswald: "Oswald",
+"Verdana",
+sans-serif;
+$arial: "Arial",
+sans-serif;
 
 $table-width: 768px;
 $desktop-width: 1300px;

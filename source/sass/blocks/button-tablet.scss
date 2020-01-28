@@ -1,7 +1,7 @@
  .button--tablet {
    @media (min-width: $table-width) {
      @include font-text($oswald, 20px, 20px, 400);
-     position: absolute;
+     //position: absolute;
      max-width: 245px;
      max-height: 50px;
      top: 298px;

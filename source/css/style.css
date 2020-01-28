@@ -952,8 +952,12 @@ table {
   position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
+<<<<<<< HEAD
           align-items: center;
   margin: 0 auto; }
+=======
+          align-items: center; }
+>>>>>>> 1b55c0ab99a8445ceb3aeed55932c8b494b286ff
   @media (min-width: 768px) {
     .page-header {
       width: 768px;
@@ -2482,6 +2486,7 @@ table {
   .button--tablet {
     position: inherit; } }
 
+<<<<<<< HEAD
 .slider__photo-before {
   margin: 0 auto; }
 
@@ -2607,4 +2612,6 @@ table {
                 box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
         border: solid 2px #68b738; } }
 
+=======
+>>>>>>> 1b55c0ab99a8445ceb3aeed55932c8b494b286ff
 /*# sourceMappingURL=style.css.map */
