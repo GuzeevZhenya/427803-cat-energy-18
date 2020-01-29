@@ -28,5 +28,19 @@
     padding: 0;
     border-bottom: none;
   }
+}
 
+.page-footer__logo-image {
+  width: 128px;
+  height: 24px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

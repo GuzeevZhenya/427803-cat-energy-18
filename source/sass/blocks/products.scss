@@ -1,5 +1,4 @@
 .products {
-
   @include list-reset;
   // @include wrapper;
   display: flex;
@@ -25,7 +24,6 @@
       border-bottom: 1px solid $border;
       padding: 5px 0;
     }
-
   }
 
   table {
@@ -59,7 +57,6 @@
   padding-bottom: 24px;
   margin: 0 auto;
 
-
   @media (min-width: $table-width) {
     background-color: $bgc;
     padding: 0 38px 40px;
@@ -75,7 +72,6 @@
     margin-right: 80px;
     margin-bottom: 142px;
   }
-
 }
 
 .products__image {
@@ -139,7 +135,6 @@
   @media (min-width: $table-width) {
     margin-bottom: 0;
   }
-
 }
 
 .products__item-wrapper {

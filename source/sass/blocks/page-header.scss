@@ -33,6 +33,15 @@
   width: 195px;
 }
 
+.page-header__logo img:hover,
+:focus {
+  opacity: 0.7;
+}
+
+.page-header__logo:active {
+  opacity: 0.7;
+}
+
 .page-header__wrapper-container {
   @include wrapper;
   display: flex;
@@ -44,6 +53,7 @@
     padding: 0;
     padding-left: 30px;
   }
+
   @media (min-width: $desktop-width) {
     padding-left: 0;
   }

@@ -12,7 +12,9 @@
   @media (min-width: $table-width) {
     min-height: 200px;
     align-items: flex-end;
+    padding-left: 90px;
     padding-right: 125px;
+    background-position: left;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,7 +23,6 @@
     padding-right: 0;
     padding-left: 0;
     justify-content: flex-end;
-
   }
 }
 
@@ -30,7 +31,7 @@
 
   @media (min-width: $table-width) {
     position: absolute;
-    left: 60px;
+    left: 90px;
     top: 65px;
   }
 

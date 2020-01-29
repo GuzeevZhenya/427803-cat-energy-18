@@ -7,7 +7,10 @@
   border-bottom: 1px solid $form-border;
 
   @media (min-width: $tablet-width) {
-    padding-left: 30px;
+    padding: 53px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     border-left: 1px solid $form-border;
     border-right: 1px solid $form-border;
   }
@@ -15,6 +18,10 @@
 
 .select__item {
   margin-bottom: 11px;
+
+  @media (min-width: $table-width) {}
+
+  @media (min-width: $desktop-width) {}
 
   &--checkbox {
     margin-bottom: 10px;
@@ -38,7 +45,6 @@
 
   @include font-text($oswald, 16px, 18px, 400);
   text-transform: uppercase;
-
 
   &::before {
     content: "";
@@ -86,6 +92,23 @@
     background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $table-width) {
+    padding: 10px 45px;
+    padding-left: 60px;
+    @include font-text($oswald, 20px, 20px, 400);
+
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+
+    &::after {
+      left: 20px;
+      width: 18px;
+      height: 18px;
+    }
+  }
 }
 
 .select__check-in:checked+.select__label::after {
@@ -93,13 +116,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .select {
-    padding: 23px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
   .select__item {
     &--radio {
       width: 100%;
@@ -117,6 +133,10 @@
     &--checkbox {
       margin-bottom: 0;
       width: 45%;
+
+      @media (min-width: $table-width) {
+        width: 44%;
+      }
     }
   }
 
@@ -127,23 +147,6 @@
   @media (max-width: $desktop-width - 1) {
     .select__item--checkbox:nth-child(2n):not(:last-child) {
       margin-bottom: 31px;
-    }
-  }
-
-  .select__label {
-    padding: 10px 45px;
-    padding-left: 60px;
-    //@include font-header(20px, 20px);
-
-    &::before {
-      width: 40px;
-      height: 40px;
-    }
-
-    &::after {
-      left: 20px;
-      width: 18px;
-      height: 18px;
     }
   }
 }

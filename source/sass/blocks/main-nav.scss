@@ -1,7 +1,6 @@
 .main-nav {
   display: block;
 
-
   @media (min-width: $table-width) {
     display: flex;
     justify-content: space-between;
@@ -11,6 +10,4 @@
   @media (min-width: $desktop-width) {
     z-index: 1;
   }
-
-
 }

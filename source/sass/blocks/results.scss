@@ -1,7 +1,6 @@
 .results {
   margin-bottom: 25px;
 
-
   @media (min-width: $table-width) {
     display: flex;
     align-items: center;
@@ -25,7 +24,6 @@
   @media (min-width: $table-width) {
     @include font-text($oswald, 30px, 37px, 400);
     min-width: 100px;
-
     margin: 16px 0;
 
   }
@@ -50,7 +48,6 @@
   @media (min-width: $table-width) {
     min-width: 162px;
   }
-
 }
 
 .results__action {
@@ -113,7 +110,6 @@
   @media (min-width: $desktop-width) {
     padding: 0;
   }
-
 }
 
 

@@ -23,7 +23,6 @@
   padding: 22px 0;
   width: 100%;
 
-
   @media (min-width: $table-width) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -141,8 +140,6 @@
   @media (min-width: $table-width) {
     content: "2";
     top: -40px;
-
-
   }
 }
 
@@ -155,7 +152,6 @@
 .advantages__item--wight::after {
   @media (min-width: $table-width) {
     content: "4";
-
   }
 }
 
@@ -176,7 +172,6 @@
   top: 0;
   left: 0;
   background-size: 40px 40px;
-
 
   @media (min-width: $table-width) {}
 
