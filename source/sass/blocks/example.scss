@@ -14,8 +14,6 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $table-width) {}
-
   @media (min-width: $desktop-width) {
     flex-direction: row;
     background-color: $bgc;
@@ -49,7 +47,6 @@
 }
 
 .example__wrapper {
-
   @media (min-width: $desktop-width) {
     margin-top: -168px;
   }
@@ -94,11 +91,6 @@
   }
 }
 
-
-
-
-
-//Леввая херня про кота
 .product-promotion__example-images {
 
   align-self: center;
@@ -158,7 +150,6 @@
       background-image: linear-gradient(to bottom, transparent 190px, $blocks-bg-color-add 190px);
     }
   }
-
 }
 
 .product-promotion__img {

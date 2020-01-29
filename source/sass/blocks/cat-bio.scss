@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 73px;
+    margin-bottom: 73px;
   }
 }
 
@@ -16,11 +16,9 @@
   text-transform: uppercase;
 
   @media (min-width: $table-width) {
-    margin: 0;
     @include font-text($oswald, 20px, 20px, 400);
+    margin: 0;
   }
-
-  @media (min-width: $desktop-width) {}
 }
 
 .cat-bio__input {
@@ -32,26 +30,13 @@
   margin-left: 17px;
   outline: none;
 
-  &:hover,
-  &:focus {
-    border-color: #cdcdcd;
-  }
-
-  &:activef {
-
-    border: #444444;
-  }
-
-
-
-
   @media (min-width: $table-width) {
     margin: 10px;
     flex: 1;
   }
 
   @media (min-width: $desktop-width) {
-    max-height: 50px;
+    min-height: 50px;
     width: 475px;
   }
 }

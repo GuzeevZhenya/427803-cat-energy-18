@@ -9,7 +9,6 @@
 
     @media (min-width: $table-width) {
       @include font-text($oswald, 20px, 20px, 400);
-
     }
 
     @media (min-width: $desktop-width) {
@@ -68,4 +67,14 @@
 .cat-contacts-icon {
   position: absolute;
   right: 15px;
+
+  &:hover,
+  &:focus {
+    color: red;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: #8fc46e;
+  }
 }

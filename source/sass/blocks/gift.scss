@@ -9,6 +9,10 @@
   padding: 50px 60px;
   min-height: 290px;
 
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+
   @media (min-width: $table-width) {
     min-height: 200px;
     align-items: flex-end;

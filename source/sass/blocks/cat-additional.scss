@@ -84,8 +84,6 @@
   @media (min-width: $table-width) {
     padding: 0 70px;
   }
-
-  @media (min-width: $table-width) {}
 }
 
 .cat-additional__send {
@@ -126,5 +124,9 @@
   @media (min-width: $table-width) {
     @include font-text($oswald, 36px, 36px, 400);
     margin: 0;
+    margin-right: 50px;
+    padding-left: 20px;
+    max-width: 260px;
+    background-color: #ffffff;
   }
 }

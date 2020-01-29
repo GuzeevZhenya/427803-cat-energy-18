@@ -64,6 +64,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+  }
 }
 
 .map__info {

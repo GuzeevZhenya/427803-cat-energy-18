@@ -4,25 +4,20 @@
   background-position: top;
   position: relative;
 
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
+
   @media (min-width: $table-width) {
     background-image: none;
   }
-
-
-  /*
-  @include retina {
-    background-image: url("../img/index-background-mobile@2x.jpg");
-  }
-  */
 }
 
 .promo__header {
-
   @media (min-width: $table-width) {
     padding-left: 90px;
     padding-bottom: 530px;
   }
-
 
   @media (min-width: $desktop-width) {
     padding-left: 80px;
@@ -41,9 +36,13 @@
     background-repeat: no-repeat;
     background-position: right;
     background-size: auto;
-    right: 0px;
+    right: 0;
     top: -113px;
     z-index: 0;
+  }
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-desktop@2x.jpg");
   }
 }
 
@@ -76,8 +75,6 @@
   @media (min-width: $table-width) {
     margin: 0;
   }
-
-  @media (min-width: $desktop-width) {}
 }
 
 .promo__title {

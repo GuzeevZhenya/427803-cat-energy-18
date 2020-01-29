@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css" />
   <title>Document</title>
 </head>
@@ -39,10 +41,12 @@
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title">Подбор программы</h1>
-    <p class="page-main__text">
-      Заполните анкету и мы подберем программу питания для вашего кота
-    </p>
+    <div class="page-main__wrapper">
+      <h1 class="page-main__title">Подбор программы</h1>
+      <p class="page-main__text">
+        Заполните анкету и мы подберем программу питания для вашего кота
+      </p>
+    </div>
     <form action="https://echo.htmlacademy.ru" method="post" class="page-main__form form">
       <div class="cat">
         <div class="cat-form cat-bio">
@@ -108,7 +112,7 @@
 
       <div class="cat-additional">
         <div class="cat-additional__wrapper">
-          <h2 class="cat-additional__title ">Дополнительно</h2>
+          <h2 class="cat-additional__title title-border">Дополнительно</h2>
           <div class="cat-additional__container">
             <ul class="cat-additional-checkbox select select--none">
               <li class="select__item select__item--checkbox">
@@ -155,9 +159,11 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <div class="page-footer__logo">
-        <img src="img/logo-footer.svg" width="128" height="25" alt="Логотип" />
-      </div>
+      <a class="page-footer__logo" href="index.html">
+        <svg class="page-footer__logo-image" width="128" height="24">
+          <use xlink:href="img/sprite.svg#logo-footer"></use>
+        </svg>
+      </a>
       <ul class="page-footer__social social">
         <li class="social__list-item">
           <a class="social__link social__link--vk" href="https://vk.ru">
@@ -184,12 +190,12 @@
           </a>
         </li>
       </ul>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="">HTML Academy</a>
-        <a href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__image" src="img/htmlacademy.svg" width="27" height="34" alt="Копирайтинг" />
-        </a>
-      </div>
+      <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        HTML Academy
+        <svg class="copyright__logo" width="27" height="34">
+          <use xlink:href="img/sprite.svg#htmlacademy"></use>
+        </svg>
+      </a>
     </div>
   </footer>
 </body>

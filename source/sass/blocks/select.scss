@@ -14,14 +14,14 @@
     border-left: 1px solid $form-border;
     border-right: 1px solid $form-border;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px;
+  }
 }
 
 .select__item {
   margin-bottom: 11px;
-
-  @media (min-width: $table-width) {}
-
-  @media (min-width: $desktop-width) {}
 
   &--checkbox {
     margin-bottom: 10px;
@@ -94,9 +94,9 @@
   }
 
   @media (min-width: $table-width) {
+    @include font-text($oswald, 20px, 20px, 400);
     padding: 10px 45px;
     padding-left: 60px;
-    @include font-text($oswald, 20px, 20px, 400);
 
     &::before {
       width: 40px;
@@ -111,7 +111,7 @@
   }
 }
 
-.select__check-in:checked+.select__label::after {
+.select__check-in:checked + .select__label::after {
   content: "";
 }
 
