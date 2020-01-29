@@ -28,13 +28,11 @@
     padding-left: 80px;
     padding-bottom: 188px;
   }
-
 }
 
 
 .promo::after {
   @media (min-width: $desktop-width) {
-
     content: "";
     position: absolute;
     width: 50%;
@@ -57,7 +55,6 @@
     z-index: -3;
     width: 550px;
     height: 500px;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -65,7 +62,6 @@
     top: 0;
     left: 495px;
     z-index: 3;
-
   }
 }
 

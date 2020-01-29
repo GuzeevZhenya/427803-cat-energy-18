@@ -33,9 +33,13 @@
   width: 195px;
 }
 
-.page-header__logo img:hover {
-  color: red;
-  background-color: red;
+.page-header__logo img:hover,
+:focus {
+  opacity: 0.7;
+}
+
+.page-header__logo:active {
+  opacity: 0.7;
 }
 
 .page-header__wrapper-container {

@@ -12,9 +12,6 @@
   @include wrapper;
   display: flex;
   flex-direction: column;
-
-
-
 }
 
 .products-additional__container {
@@ -67,9 +64,6 @@
   }
 }
 
-
-
-
 .products-additional__title {
   @include font-text($oswald, 24px, 24px, 400);
   margin: 0;
@@ -118,7 +112,6 @@
   @media (min-width: $table-width) {
     @include font-text($arial, 16px, 20px, 400);
     margin: 0;
-
   }
 }
 

@@ -37,18 +37,15 @@
     flex-direction: row;
     margin: 0;
     padding-left: 40px;
-
   }
 }
 
 .example-big__wrapper {
-
   margin: 0 auto;
 
   @media (min-width: $table-width) {
     background-color: #ffffff;
   }
-
 }
 
 .example__wrapper {

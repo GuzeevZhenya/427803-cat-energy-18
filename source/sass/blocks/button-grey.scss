@@ -6,4 +6,15 @@
   text-align: center;
   padding: 10px 0;
   border: none;
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+    color: #444444;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: #b9b9b9;
+  }
 }

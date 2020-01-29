@@ -23,7 +23,6 @@
 
   @media (min-width: $desktop-width) {}
 
-
   &--checkbox {
     margin-bottom: 10px;
   }
@@ -46,7 +45,6 @@
 
   @include font-text($oswald, 16px, 18px, 400);
   text-transform: uppercase;
-
 
   &::before {
     content: "";
@@ -117,11 +115,7 @@
   content: "";
 }
 
-
-
-
 @media (min-width: $tablet-width) {
-
   .select__item {
     &--radio {
       width: 100%;
@@ -155,7 +149,6 @@
       margin-bottom: 31px;
     }
   }
-
 }
 
 @media (min-width: $desktop-width) {

@@ -30,6 +30,20 @@
   width: 100%;
   padding-left: 15px;
   margin-left: 17px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    border-color: #cdcdcd;
+  }
+
+  &:activef {
+
+    border: #444444;
+  }
+
+
+
 
   @media (min-width: $table-width) {
     margin: 10px;
@@ -54,6 +68,5 @@
     min-width: 570px;
     margin: 0;
     padding-left: 40px;
-
   }
 }

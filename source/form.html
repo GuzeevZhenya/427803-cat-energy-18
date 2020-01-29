@@ -19,7 +19,7 @@
           <img src="img/logo-mobile.svg" width="191" height="39" alt="Логотип «Кэт энерджи»">
         </picture>
       </a>
-      <button class="main-nav__toggle toggle" type="button">
+      <button class="page-header__toggle toggle" type="button">
         <img src="img/icon-mobile-menu.svg" width="24" height="18" alt="">
       </button>
     </div>
@@ -43,15 +43,15 @@
     <p class="page-main__text">
       Заполните анкету и мы подберем программу питания для вашего кота
     </p>
-    <form action="page-main__form form">
+    <form action="https://echo.htmlacademy.ru" method="post" class="page-main__form form">
       <div class="cat">
-        <div class="form__cat-bio cat-bio">
+        <div class="cat-form cat-bio">
           <div class="cat-bio__wrapper">
-            <label for="cat-bio__name">Имя:*<input class="cat-bio__input" id="cat__name" type="text" required
+            <label for="cat__name">Имя:*<input class="cat-bio__input" id="cat__name" type="text" required
                 placeholder="Барсик" /></label>
-            <label for="cat-bio__weight">Вес&#160;(Кг):*<input class="cat-bio__input" id="cat__weight" type="text"
-                required placeholder="7" /></label>
-            <label for="cat-bio__age">Возраст&#160;(Лет):<input class="cat-bio__input" id="cat__age" type="text"
+            <label for="cat__weight">Вес&#160;(Кг):*<input class="cat-bio__input" id="cat__weight" type="text" required
+                placeholder="7" /></label>
+            <label for="cat__age">Возраст&#160;(Лет):<input class="cat-bio__input" id="cat__age" type="text"
                 placeholder="7" /></label>
           </div>
         </div>
@@ -81,13 +81,13 @@
             Контактные данные (владельца кота)
           </h2>
           <div class="cat-contacts__info">
-            <label for="">E&#8209;mail*
+            <label for="cat__email">E&#8209;mail*
               <input class="cat-contacts__input" id="cat__email" type="text" required placeholder="kuklachev@gmail.com">
               <svg class="cat-contacts-icon" width="18" height="14">
                 <use xlink:href="img/sprite.svg#icon-mail"></use>
               </svg>
             </label>
-            <label for="">Телефон*
+            <label for="cat__telephon">Телефон*
               <input class="cat-contacts__input" type="text" id="cat__telephon" required
                 placeholder="8 (960) 900-60-90">
               <svg class="cat-contacts-icon" width="21" height="21">
@@ -100,7 +100,7 @@
       <div class="cat-comments title-border">
         <div class="cat-comments__wrapper">
           <h2 class="cat-comments__title">Комментарий</h2>
-          <textarea name="comments" class="cot-comments__textarea" id="" cols="45" rows="10"
+          <textarea name="comments" class="cat-comments__textarea" id="cat-coomments" cols="45" rows="10"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </div>
@@ -129,7 +129,7 @@
                 <label class="select__label select__label--checkbox" for="check-4" tabindex="0">витамины</label>
               </li>
             </ul>
-            <div class="cat-additional__send">
+            <div class="cat-additional__send form">
               <button class="form__button button button--sell" type="submit">
                 Отправить заявку
               </button>
@@ -137,6 +137,7 @@
             </div>
           </div>
         </div>
+      </div>
     </form>
   </main>
 
@@ -144,7 +145,7 @@
     <div class="map__info">
       <h3 class="map__title">Приглашаем к сотрудничеству дилеров!</h3>
       <p class="map__text">
-        ул. Большая Конюшенная, д. 19/8 <span class="map__text--selected">Санкт-Петербург</span>
+        ул. Большая Конюшенная, д. 19/8 <span class="map__text-selected">Санкт-Петербург</span>
       </p>
     </div>
     <iframe class="map__location"

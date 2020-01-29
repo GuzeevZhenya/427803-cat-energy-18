@@ -22,10 +22,12 @@
     text-decoration: none;
 
     &:hover,
-    &:focus,
-    &:active {
+    &:focus {
+      color: #707070;
+    }
 
-      color: #c1ddb1;
+    &:active {
+      color: #b7b7b7;
     }
   }
 
@@ -34,8 +36,6 @@
     border: none;
   }
 }
-
-
 
 .site-list__link--active::after {
   @media (min-width: $table-width) {
@@ -47,10 +47,19 @@
     bottom: -5px;
     left: 0;
   }
-
 }
 
 .site-list--white a {
+
+  &:hover,
+  &:focus {
+    color: #c7e2b6;
+  }
+
+  &:active {
+    color: #88bd68;
+  }
+
   @media (min-width: $desktop-width) {
     color: white;
   }
