@@ -126,5 +126,6 @@
 
   @media (min-width: $table-width) {
     @include font-text($oswald, 36px, 36px, 400);
+    margin: 0;
   }
 }

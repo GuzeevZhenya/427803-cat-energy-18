@@ -33,6 +33,11 @@
   width: 195px;
 }
 
+.page-header__logo img:hover {
+  color: red;
+  background-color: red;
+}
+
 .page-header__wrapper-container {
   @include wrapper;
   display: flex;
@@ -44,6 +49,7 @@
     padding: 0;
     padding-left: 30px;
   }
+
   @media (min-width: $desktop-width) {
     padding-left: 0;
   }

@@ -44,4 +44,7 @@
     width: 345px;
     text-transform: uppercase;
   }
+  @media (min-width: $desktop-width) {
+    margin-left: 40px;
+  }
 }
